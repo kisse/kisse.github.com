@@ -1,0 +1,20 @@
+auto:	          true
+
+markdown:         rdiscount
+pygments:         true
+paginate:         6
+permalink:       pretty
+
+title:            Keep It Simple,Stupid & Emotion
+url:              http://vtouch360.com
+
+author:
+    name:         易特商城产品部
+    sina:      http://weibo.com/zuosanshao
+    qq:         http://t.qq.com/zuosanshao
+description:      "Keep It Simple，Stupid & Emotion"
+author_info:      <a href="http://vtouch360.com/about">易特商城产品部</a>
+email:            zuosanshao@qq.com
+
+copyright:
+    - Design by <a href="http://zuosanshao.com/about" title="左三少" target="_blank">左三少</a> &copy; Copyright 2012
