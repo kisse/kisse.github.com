@@ -8,6 +8,7 @@
     font-size: 12px;
     line-height: 1.5;
     zoom: 1;
+	display:none;
 }
 
 .ui-poptip-shadow {
@@ -212,3 +213,4 @@ a.ui-poptip-close:hover {
 .ui-poptip-white .ui-poptip-arrow span {
     color: #fff;
 }
+/*		.tooltip {display:none;}*/

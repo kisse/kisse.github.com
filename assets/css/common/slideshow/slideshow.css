@@ -1,0 +1,23 @@
+.slidshow {
+    position: relative;
+	width:150px;
+}
+
+.slidshow .slidetabs {
+    position: absolute;
+	bottom:10px;
+	right:10px;
+}
+
+.slidetabs_icon {
+    width:14px;
+	height: 14px;
+	background: #b5b5b5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 4px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+}

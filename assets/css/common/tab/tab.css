@@ -2,34 +2,25 @@
 
 @charset "utf-8";
 
-.ui-tab {
-    margin: 0;
-    padding: 0;
-}
-
-.ui-tab ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.ui-tab li {
-    list-style: none;
-    vertical-align: top;
-    position: relative;
-    top: 1px;
-}
-
 .ui-tab-items {
+ list-style: none;
+    margin: 0;
+    padding: 0;
     border-bottom: 1px solid #E5E5E5;
     font-size: 14px;
 }
 
 .ui-tab-item {
+ list-style: none;
+    vertical-align: top;
+    position: relative;
+    top: 1px;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     *margin-right: 4px;
+	border: 1px solid #E5E5E5;
+    border-bottom: none;
 }
 
 .ui-tab-item a {
@@ -38,8 +29,6 @@
     line-height: 32px;
     height: 32px;
     padding: 0 10px;
-    border: 1px solid #E5E5E5;
-    border-bottom: none;
     color: #4D4D4D;
     display: inline-block;
     *display: inline;
@@ -47,9 +36,11 @@
     transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
-.ui-tab-item-current a {
+.ui-tab-items .current {
     font-weight: bold;
     height: 33px;
+    border: 1px solid #E5E5E5;
+    border-bottom: none;
 }
 
 .ui-tab-item a:hover {
@@ -57,6 +48,13 @@
     text-decoration: none;
 }
 
-.ui-tab-item-current a:hover {
+.ui-tab-items .current:hover {
     background: #fff;
+	    border-bottom: none;
+}
+
+.ui-tab-content {
+    border: 1px solid #E5E5E5;
+    border-top: none;
+	background:#FFFFFF;
 }

@@ -1,0 +1,95 @@
+.ui_scrollable {
+	background-color:#efefef;
+    border:2px solid #fff;
+    outline:1px solid #ddd;
+    -moz-ouline-radius:4px;
+	height:60px;
+	width:400px;
+	padding:10px;
+	margin-top:10px;
+}
+
+.ui_scrollable .ui_scrollable_left {
+    background:url(../../../images/hori_large.png) no-repeat;
+	width:30px;
+	height:30px;
+    float:left; 
+	cursor:pointer; 
+	margin:15px 5px;
+	display:block;
+}
+
+.ui_scrollable .ui_scrollable_left:hover {
+    background-position: -30px 0;
+}
+
+.ui_scrollable .ui_scrollable_right {
+    background:url(../../../images/hori_large.png) no-repeat 0 -30px;
+	width:30px;
+	height:30px;
+    float:left; 
+	cursor:pointer; 
+	margin:15px 5px;
+	display:block;
+}
+
+.ui_scrollable .ui_scrollable_right:hover {
+    background-position: -30px -30px;
+}
+
+ /*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 320px;
+  height:60px;
+  float:left;
+}
+ 
+/*
+root element for scrollable items. Must be absolutely positioned
+and it should have a extremely large width to accommodate scrollable
+items.  it's enough that you set width and height for the root element
+and not for this element.
+*/
+.scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+ 
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items div {
+  float:left;
+}
+
+.items img {
+    padding:0 10px;
+	width:60px;
+	height:60px;
+}
+
+#image_wrap {
+    /* dimensions */
+    width:400px;
+	height:400px;
+    padding:10px;
+ 
+    /* some "skinning" */
+    background-color:#efefef;
+    border:2px solid #fff;
+    outline:1px solid #ddd;
+    -moz-ouline-radius:4px;
+}
+
+#image_wrap img {
+    width:400px;
+	height:400px;
+}

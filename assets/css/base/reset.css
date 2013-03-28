@@ -257,4 +257,14 @@ body .fn-hide {
     -webkit-text-size-adjust: none;
 }
 
+.tooltip {
+    display:none;
+}
+.ui-poptip.top {
+    display:none;
+}
+.ui-poptip.bottom {
+    display:none;
+}
+
 

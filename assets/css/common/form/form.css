@@ -17,7 +17,7 @@
 }
 
 .ui-form legend {
-    display: none;
+    font-size:16px;
 }
 
 .ui-form-explain {
@@ -49,6 +49,7 @@
 .ui-form-item {
     padding: 0 5px 20px 170px;
     zoom: 1;
+	clear: both;
 }
 
 .ui-form-item select {
