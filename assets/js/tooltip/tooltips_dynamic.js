@@ -1,9 +1,10 @@
 $(function(){
 // initialize tooltip
-$("#demo").tooltip({
+$("#demo2").tooltip({
  
    // tweak the position
-   offset: [10, 2],
+       position: "top center",
+          offset: [-30, -80],
  
    // use the "slide" effect
    effect: 'slide'

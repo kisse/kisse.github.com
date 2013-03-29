@@ -11,7 +11,7 @@ $(function(){//Лђеп$("#demo :input")
           predelay: 400,
  
           // tweak the position
-          position: "bottom right",
-          offset: [-50, -80]
+          position: "top center",
+          offset: [-200, -480]
       });
 		   });

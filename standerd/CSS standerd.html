@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	
+	    <link href="../assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common/nav/nav.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/pages/common.css" rel="stylesheet" type="text/css">	
+    <link href="../assets/css/base/grid/grid.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common/box/box.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="nav">
+    <div class="ui-nav nav">
+	    <ul class="ui-nav-main">
+		    <li class="ui-nav-item"><a href="#">通用规范</a></li>
+			<li class="ui-nav-item"><a href="#">HTML规范</a></li>
+			<li class="ui-nav-item  ui-nav-item-current"><a href="#">CSS规范</a></li>
+			<li class="ui-nav-item"><a href="#">JS规范</a></li>
+			<li class="ui-nav-item"><a href="#">基础样式</a></li>
+			<li class="ui-nav-item"><a href="#">通用样式</a></li>
+			<li class="ui-nav-item"><a href="#">通用组件</a></li>
+			<li class="ui-nav-item"><a href="#">版本变更信息</a></li>
+		</ul>
+		<div class="version">版本号v1.0</div>
+	</div>
+</div>
+<div id="header">CSS 编码规范（未设计）</div>
+<div id="content">
+    <div class="ui-grid-row">
+        <div class="ui-grid-5">
+		    <div class="ui-box">
+			    <div class="ui-box-head">
+				    <div class="ui-box-head-border">
+					    <h3 class="ui-box-head-title">文档提纲</h3>
+					</div>
+				</div>
+				<div class="ui-box-container">
+				    <div class="ui-box-content">
+					    <ul>
+						    <li>
+							    <a href="" target="_self">css 校验</a>
+							</li>
+							<li>
+							    <a href="" target="_self">元素</a>
+								<ul>
+								    <li><a href="" target="_self">结构性元素</a></li>
+									<li><a href="" target="_self">头部</a></li>
+									<li><a href="" target="_self">文本</a></li>
+									<li><a href="" target="_self">媒体元</a></li>
+									<li><a href="" target="_self">列表</a></li>
+									<li><a href="" target="_self">表单元素</a></li>
+								</ul>
+							</li>
+							<li><a href="" target="_self">文档模板</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+		</div>
+        <div class="ui-grid-20">
+		    <div id="main">
+			    <h2 id="first">文件与目录命名约定</h2>
+				<p>1.一律小写, 必须是英文单词或产品名称的拼音, 多个单词用连字符(-)连接. 只能出现英文字母、数字和连字符, 严禁出现中文.</p>
+				<p>2.出现版本号时, 需要用字母 v 做为前缀, 小版本号用点号(.)隔开, 比如 global-v8.js 或 detail-v2.2.js .</p>
+				<p>3.该命名规范适用于 html, css, js, swf, php, xml, png, gif, jpg, ico 等前端维护的所有文件类型和相关目录.</p>
+				<p>4.js 和 css 压缩文件, 统一以 -min 结尾, 比如源码文件为 seed.js, 压缩后为 seed-min.js .</p>
+				<h2 id="second">文件编码约定</h2>
+				<p>由于历史原因, 前端开发涉及的所有文本文件请统一 采用 GB2312, GBK 或 GB18030 编码 .</p>
+				<p>注意：后台采用 UTF-8 的新项目, 或自主开发的项目, 推荐使用 UTF-8 编码.</p>
+				<h2 id="third">id 和 class 命名约定</h2>
+				<p>1.id 和 class 的命名总规则为： 内容优先,表现为辅. 首先根据内容来命名, 比如 main-nav. 如果根据内容找不到合适的命名, 可以再结合表现来定, 比如 skin-blue, present-tab, col-main.</p>
+				<p>2.id 和 class 名称一律小写, 多个单词用连字符连接, 比如 recommend-presents.</p>
+				<p>3.id 和 class 名称中只能出现小写的 26 个英文字母、数字和连字符(-), 任何其它字符都严禁出现.</p>
+				<p>4.id 和 class 尽量用英文单词命名 . 确实找不到合适的单词时, 可以考虑使用产品的中文拼音, 比如 wangwang, dating. 对于中国以及淘宝特色词汇, 也可以使用拼音, 比如 xiaobao, daigou. 除了产品名称和特色词汇, 其它任何情况下都严禁使用拼音.</p>
+				<p>5.在不影响语义的情况下, id 和 class 名称中可以适当采用英文单词缩写, 比如 col, nav, hd, bd, ft 等, 但切忌自造缩写.</p>
+				<p>6.id 和 class 名称中的第一个词必须是单词全拼或语义非常清晰的单词缩写, 比如 present, col.</p>
+				<p>7.仅在 JavaScript 代码中当作 hook 用的 id 或 class, 命名规则为 J_UpperCamelCase``(请注意, ``J_ 后的首字母也大写！), 其中字母 J 代表 JavaScript, 也是钩子(hook)的象形. 注意：如果在 JavaScript 和 CSS 中都需要用到, 则不用遵守本约定.</p>
+				<p>8.在自动化测试脚本中当作 hook 用的 class, 命名规则为 T_UpperCamelCase, 其中字母 T 代表 Test.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+3.1 
+除了 css hack 和浏览器私有属性， 推荐使用 w3c css validator 校验其余的代码.
+3.2 代码规范
+3.2.1 一般性命名
+使用小写字母，复合词以 - 分隔; 例如 nav.css , login-nav.css , login-page
+3.2.2 id 和类的命名
+为 id 和样式类使用有意义或通用的名字，避免由于 css 命名更改引起的不必要的文档或模板改变；例如
+/* 不推荐： 无意义 */
+#yee-1901 {}
+
+/* 不推荐： 表现层的命名 */
+.button-green {}
+/* 推荐: 具体 */
+#gallery {}
+#login {}
+.video {}
+
+/* 推荐: 通用 */
+.effect {}
+.alt {}
+id 和 class 的命名长度应该适中，不要太简略也不要太详细；例如
+/* 不推荐 */
+#navigation {}
+.atr {}
+/* 推荐 */
+#nav {}
+.author {}
+3.2.3 元素选择器
+为了 性能原因 ， 请避免元素选择器和类选择器以及 id 选择器混用;例如
+/* 不推荐 */
+ul#example {}
+div.error {}
+/* 推荐 */
+#example {}
+.error {}
+3.2.4 简写属性名字
+为了提高可读性，尽可能的使用简写属性。例如
+/* 不推荐 */
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%;
+line-height: 1.6;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+/* 推荐 */
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;
+3.2.5 0 和单位
+对属性值为 0 的情况省略单位；例如
+margin: 0;
+padding: 0;
+3.2.6 0前缀情况
+省略属性值中的 0 前缀;例如
+font-size: .8em;
+3.2.7 16 进制的颜色值表示
+尽可能使用 3 个字符的 16 进制颜色值；例如
+/* 不推荐 */
+color: #eebbcc;
+/* 推荐 */
+color: #ebc;
+3.2.8 前缀
+为了防止冲突，对于应用特定的样式附加应用前缀；例如
+.login-help {} /* login page */
+#detail-note {} /* detail page */
+3.2.9 hacks
+避免 css hack ， 考虑使用特定浏览器前缀表示；例如
+.ks-ie6 p {
+    margin: 1em 0;
+}
+3.3 格式规范
+3.3.1 属性声明顺序
+按照字母顺序声明属性，排序时忽略私有的浏览器前缀，对于特定的浏览器，私有的浏览器前缀应该参与排序;例如
+background: fuchsia;
+border: 1px solid;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: black;
+text-align: center;
+text-indent: 2em;
+3.3.2 块缩进
+块的内容应该被缩进；例如
+@media screen, projection {
+
+  html {
+    background: #fff;
+    color: #444;
+  }
+
+}
+3.3.3 分号
+使用分号结束单个属性的定义；例如
+/* 不推荐 */
+.test {
+  display: block;
+  height: 100px
+}
+/* 推荐 */
+.test {
+  display: block;
+  height: 100px;
+}
+3.3.4 空格
+在属性名冒号后加一个空格，例如
+/* 不推荐 */
+.test {
+  display:block;
+}
+/* 推荐 */
+.test {
+  display: block;
+}
+3.3.5 空行
+多个选择以及声明间以行分隔；例如
+/* 不推荐 */
+a:focus, a:active {
+  position: relative; top: 1px;
+}
+/* 推荐 */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+多个 css 规则间以空行分隔；例如
+html {
+  background: #fff;
+}
+
+body {
+  margin: auto;
+  width: 50%;
+}
+3.3.6 引号
+尽可能的不用引号，迫不得已时使用单引号.
+/* 不推荐 */
+@import url("//www.google.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+/* 推荐 */
+@import url(//www.google.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+}
+3.3.7 注释
+成组的 css 规则间用块状注释和空行分离;例如
+/* Header */
+
+#login-header {}
+
+#login-header-below {}
+
+/* Footer */
+
+#login-footer {}
+
+#login-footer-below {}
+
+/* Gallery */
+
+.login-gallery {}
+
+.login-gallery-other {}

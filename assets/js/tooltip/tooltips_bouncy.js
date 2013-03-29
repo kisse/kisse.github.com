@@ -25,5 +25,6 @@ $(function(){
     );
 	
 	
-	$("#demo").tooltip({effect: 'bouncy'});
+	$("#demo1").tooltip({effect: 'bouncy', position: "top center",
+          offset: [-200, -480]});
 });

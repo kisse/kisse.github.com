@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	<script language="javascript" src="assets/js/jquery-1.7.1.js"></script>
+	<script language="javascript" src="assets/js/jquery.tools.min.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_minimal.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_fade.js"></script>
+		<script language="javascript" src="assets/js/tabs/tabs_mouseover.js"></script>
+		<script language="javascript" src="assets/js/tabs/tabs_folding.js"></script>
+				<script language="javascript" src="assets/js/tabs/tabs_horizontal.js"></script>
+				<script language="javascript" src="assets/js/tabs/tabs_slideshow.js"></script>
+	
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab_folding.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/slideshow/slideshow.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+
+
+<!--box start-->
+    <div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tab">tab</h2>
+		    <p class="module-description">标签切换</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">渐变效果</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items1">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content1">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">鼠标覆盖标签切换</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items2">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content2">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标签折叠效果及背景颜色渐变</h3>
+			<div class="module-dom">
+			<div id="accordion">
+<h2 class="current">First pane</h2>
+<div class="pane" style="display:block">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...
+</div>
+<h2>Second pane</h2>
+<div class="pane">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...
+</div> 
+<h2>Third pane</h2>
+<div class="pane">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...
+</div>
+</div>
+
+
+			</div>
+		</div>		
+		
+		<div class="module-demo">
+		    <h3 class="module-subtitle" style="clear:both">轮播效果</h3>
+			<div class="module-dom">
+<!--轮播图片-->
+<div class="slidshow">
+    <a href=""><img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg"></a>
+	<a href=""><img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg"></a>
+	<a href=""><img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg"></a>
+	<div class="slidetabs">
+	    <a class="slidetabs_icon" href="#"></a>
+        <a class="slidetabs_icon" href="#"></a>
+        <a class="slidetabs_icon" href="#"></a>
+    </div>
+</div>
+<!--手动上下翻页-->
+<a class="backward">上一页</a>
+<a class="forward">下一页</a>
+<!--手动播放或停止-->
+<button onClick='$(".slidetabs").data("slideshow").play();'>Play</button>
+<button onClick='$(".slidetabs").data("slideshow").stop();'>Stop</button>
+
+
+			</div>
+		</div>
+		
+		
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标签横向折叠效果</h3>
+			<div class="module-dom">
+<div id="accordion1"> 
+    <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" style="float:left;" />
+    <div style="width:200px; display:block; float:left;"> .. pane content .. </div>
+ 
+    <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" style="float:left;" />
+    <div style="width:200px; display:block; float:left;"> .. pane content ..</div>
+ 
+    <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" style="float:left;" />
+    <div style="width:200px; display:block; float:left;"> .. pane content ..</div>
+  </div>
+
+
+			</div>
+		</div>
+		
+	</div>
+	<!--box end-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

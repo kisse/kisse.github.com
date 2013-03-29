@@ -50,6 +50,14 @@ element stays still.
   float:left;
 }
  
+ .scrollable1 {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 320px;
+  height:60px;
+  float:left;
+}
 /*
 root element for scrollable items. Must be absolutely positioned
 and it should have a extremely large width to accommodate scrollable
@@ -57,6 +65,12 @@ items.  it's enough that you set width and height for the root element
 and not for this element.
 */
 .scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+
+.scrollable1 .items {
   /* this cannot be too large */
   width:20000em;
   position:absolute;
@@ -92,4 +106,7 @@ this element is the one that *you* will style the most.
 #image_wrap img {
     width:400px;
 	height:400px;
+}
+a.disabled {
+    visibility:hidden;
 }

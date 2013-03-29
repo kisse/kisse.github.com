@@ -8,7 +8,7 @@ $(
     $(this).expose().load();
   });
 	 // enable tabs that are contained within the wizard
-      $("ul.ui-tab-items", wizard).tabs("div.ui-tab-content > div", function(event, index) {
+      $("ul.ui-tab-items3", wizard).tabs("div.ui-tab-content3 > div", function(event, index) {
  
       /* now we are inside the onBeforeClick event */
  
@@ -26,7 +26,7 @@ $(
       });
 	  
 	   // get handle to the tabs API
-      var api = $("ul.ui-tab-items", wizard).data("tabs");
+      var api = $("ul.ui-tab-items3", wizard).data("tabs");
  
       // "next tab" button
       $("button.next", wizard).click(function() {

@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link href="assets/css/common/box/box.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button/button.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/button-dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/form.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/input.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/label.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/list/list.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/nav/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/paging/paging.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/poptip/poptip.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/table/table.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tipbox/tipbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tiptext/tiptext.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/select/select.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/step.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+
+	<!--reset start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="reset">reset</h2>
+		    <p class="module-description">reset.css 是重设样式。</p>
+		</div>			
+	</div>
+	<!--reset end-->
+	
+		<!--grid start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="grid">grid</h2>
+		    <p class="module-description">990像素定宽25栅格布局。使用说明:.ui-grid-row 表示一行，用于包裹.ui-grid-{{number}}。一行内的栅格数不要超过 25。 .ui-grid-{{number}} 表示区域跨越了多少列。数字从 1 到 25，例如ui-grid-18。</p>
+		</div>		
+	</div>
+	<!--grid end-->
+
+<!--box start-->
+    <div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="box">box</h2>
+		    <p class="module-description">带边框和标题的标准区块。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    <div class="ui-box">
+			        <div class="ui-box-head">
+				        <div class="ui-box-head-border">
+					        <h3 class="ui-box-head-title">区块标题</h3>
+						    <span class="ui-box-head-text">其他文字</span>
+						    <a href="#" class="ui-box-head-more">更多</a>
+					    </div>
+				    </div>
+				    <div class="ui-box-container">
+				        <div class="ui-box-content">ui-box-content 有默认内边距</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">浅色系区块</h3>
+			<div class="module-dom">
+			    <div class="ui-box ui-box-light">
+			        <div class="ui-box-head">
+				        <div class="ui-box-head-border">
+					        <h3 class="ui-box-head-title">浅色系</h3>
+						    <span class="ui-box-head-text">其他文字</span>
+						    <a href="#" class="ui-box-head-more">更多</a>
+					    </div>
+				    </div>
+				    <div class="ui-box-container">
+				        <div class="ui-box-content">ui-box-content 有默认内边距</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">内容区域隐藏</h3>
+			<div class="module-dom">
+			    <div class="ui-box">
+			        <div class="ui-box-head">
+				        <div class="ui-box-head-border">
+					        <h3 class="ui-box-head-title">没有内容</h3>
+						    <span class="ui-box-head-text">其他文字</span>
+						    <a href="#" class="ui-box-head-more">更多</a>
+					    </div>
+				    </div>
+				    <div class="ui-box-container" style="display: none;">
+				        <div class="ui-box-content">ui-box-content 有默认内边距</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">两个区块相连</h3>
+			<div class="module-dom">
+			    <div class="ui-box">
+			        <div class="ui-box-head">
+				        <div class="ui-box-head-border">
+					        <h3 class="ui-box-head-title">区块标题</h3>
+					    	<span class="ui-box-head-text">其他文字</span>
+					    	<a href="#" class="ui-box-head-more">更多</a>
+					    </div>
+				    </div>
+			        <div class="ui-box-container">
+				        <div class="ui-box-content">ui-box-content 有默认内边距</div>
+				    </div>
+		    	</div>
+		    	<div class="ui-box ui-box-follow">
+			        <div class="ui-box-head">
+				        <div class="ui-box-head-border">
+					        <h3 class="ui-box-head-title">连着上面的box</h3>
+				    		<span class="ui-box-head-text">其他文字</span>
+				    		<a href="#" class="ui-box-head-more">更多</a>
+				    	</div>
+				    </div>
+			    	<div class="ui-box-container">
+			    	    <div class="ui-box-content">ui-box-content 有默认内边距</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<!--box end-->
+	
+	<!--button start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="button">button</h2>
+		    <p class="module-description">全站通用按钮组件，无图片纯 css 实现，IE8 以下无圆角。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">橙色按钮 a</h3>
+			<div class="module-dom">
+			    <a href="#" class="ui-button ui-button-lorange">橙色大按钮</a>
+			    <a href="#" class="ui-button ui-button-morange">橙色中按钮</a>
+			    <a href="#" class="ui-button ui-button-sorange">橙色小按钮</a>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">橙色按钮 input</h3>
+			<div class="module-dom">
+			    <input type="button" class="ui-button ui-button-lorange" value="橙色大按钮">
+			    <input type="button" class="ui-button ui-button-morange" value="橙色中按钮">
+			    <input type="button" class="ui-button ui-button-sorange" value="橙色小按钮">
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">橙色按钮 button</h3>
+			<div class="module-dom">
+			    <button class="ui-button ui-button-lorange">橙色大按钮</button>
+			    <button class="ui-button ui-button-morange">橙色中按钮</button>
+			    <button class="ui-button ui-button-sorange">橙色小按钮</button>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">不可用按钮 a</h3>
+			<div class="module-dom">
+			    <a href="#" class="ui-button ui-button-ldisable">灰色大按钮</a>
+			    <a href="#" class="ui-button ui-button-mdisable">灰色中按钮</a>
+			    <a href="#" class="ui-button ui-button-sdisable">灰色小按钮</a>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">不可用按钮 input</h3>
+			<div class="module-dom">
+			    <input type="button" class="ui-button ui-button-ldisable" value="灰色大按钮">
+			    <input type="button" class="ui-button ui-button-mdisable" value="灰色中按钮">
+			    <input type="button" class="ui-button ui-button-sdisable" value="灰色小按钮">
+			</div>
+		</div>		
+		<div class="module-demo">
+		    <h3 class="module-subtitle">不可用按钮 button</h3>
+			<div class="module-dom">
+			    <button class="ui-button ui-button-ldisable">灰色大按钮</button>
+			    <button class="ui-button ui-button-mdisable">灰色中按钮</button>
+			    <button class="ui-button ui-button-sdisable">灰色小按钮</button>
+			</div>
+		</div>	
+	</div>
+	<!--button end-->
+	
+	<!--button-dropdown start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="button-dropdown">button-dropdown</h2>
+		    <p class="module-description">按钮下拉菜单样式。圆角。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认</h3>
+			<div class="module-dom">
+			<div class="ui-button-dropdown">
+			    <a class="ui-button ui-button-lorange ui-dbutton ui-dbutton-orange">
+				    <span class="ui-dbutton-self">下拉菜单</span>
+				    <i class="ui-dbutton-arrow iconfont" title="下三角形">É</i>
+				</a>
+				<ul class="ui-button-dropdown-large">
+				    <li class="ui-button-dropdown-item">
+					    <a href="#">设置代扣</a>
+					</li>
+					<li class="ui-button-dropdown-item">
+					    <a href="#">标为已缴</a>
+					</li>   
+				</ul>
+			</div>
+			<div class="ui-button-dropdown">
+			    <a class="ui-button ui-button-morange ui-dbutton ui-dbutton-orange">
+				    <span class="ui-dbutton-self">下拉菜单</span>
+					<i class="ui-dbutton-arrow iconfont" title="下三角形">É</i>
+				</a>
+				<ul class="ui-button-dropdown-middle">
+				    <li class="ui-button-dropdown-item">
+					    <a href="#">设置代扣</a>
+					</li>
+					<li class="ui-button-dropdown-item">
+					    <a href="#">标为已缴</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-button-dropdown">
+			    <a class="ui-button ui-button-sorange ui-dbutton ui-dbutton-orange">
+				    <span class="ui-dbutton-self">下拉菜单</span>
+					<i class="ui-dbutton-arrow iconfont" title="下三角形">É</i>
+				</a>
+				<ul class="ui-button-dropdown-small">
+				    <li class="ui-button-dropdown-item">
+					<a href="#">设置代扣</a>
+				</li>
+				<li class="ui-button-dropdown-item">
+				    <a href="#">标为已缴</a>
+				</li>
+			</ul>
+		</div>
+	       </div>
+        </div>				
+	</div>
+	<!--button-dropdown end-->
+	
+	<!--form start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="form">form </h2>
+		    <p class="module-description">通用表单样式。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认</h3>
+			<div class="module-dom">
+			    <form class="ui-form" name="" method="post" action="#" id="">
+    <fieldset>
+        <legend>表单标题</legend>
+
+        <div class="ui-form-item ui-form-item-error">
+            <label for="" class="ui-label">表单项文本</label>
+            <p class="ui-form-text">一个个文字文字
+        </p></div>
+
+        <div class="ui-form-item">
+            <label for="" class="ui-label">
+                <span class="ui-form-required">*</span>表单项文本
+            </label>
+            <input class="ui-input" type="text"> <span class="ui-form-other"><a href="#">添加备注</a></span>
+            <p class="ui-form-explain">默认文案。</p>
+        </div>
+
+        <div class="ui-form-item ui-form-item-error">
+            <label for="" class="ui-label">表单项文本</label>
+            <input class="ui-input" type="text"> <span class="ui-form-other"><a href="#">表单项其他</a></span>
+            <p class="ui-form-explain ui-tiptext ui-tiptext-error">
+                <i class="ui-tiptext-icon iconfont" title="出错">k</i>此在DOM上保存属性值，请使用data-xxx的形式。
+            </p>
+        </div>
+
+        <div class="ui-form-item ui-form-item-error ui-form-item-focus">
+            <label for="" class="ui-label">表单项文本</label>
+            <input class="ui-input" type="text"> <span class="ui-form-other"><a href="#">表单项其他</a></span>
+            <p class="ui-form-explain ui-tiptext ui-tiptext-error">
+                <i class="ui-tiptext-icon iconfont" title="出错">k</i>ui-form-item-focus 的效果。
+            </p>
+        </div>
+
+        <div class="ui-form-item ui-form-item-success">
+            <label for="" class="ui-label">表单项文本</label>
+            <textarea class="ui-textarea">一二三四五六七八九十</textarea>
+            <p class="ui-form-explain ui-tiptext ui-tiptext-success">
+                <i class="ui-tiptext-icon iconfont" title="出错">ï</i>成功文案。
+            </p>
+        </div>
+
+        <div class="ui-form-item">
+            <label for="" class="ui-label">下拉选择</label>
+            <select id="province" name="province">
+                <option value="">
+                请选择
+                </option>
+                <option value="北京">
+                北京
+                </option>
+                <option value="上海">
+                上海
+                </option>
+                <option value="天津">
+                天津
+                </option>
+                <option value="浙江">
+                浙江
+                </option>
+            </select>
+            <p class="ui-form-explain">更多地区即将开通，敬请期待。</p>
+        </div>
+
+        <div class="ui-form-item">
+            <label for="" class="ui-label ui-label-reset">不可用input</label>
+            <input class="ui-input ui-input-disable" type="text" disabled="">       
+            <p class="ui-form-explain">目前不可用</p>
+        </div>
+
+        <div class="ui-form-item">
+            <label for="" class="ui-label">验证码</label>
+            <input class="ui-input ui-input-checkcode" type="text" data-explain="请输入右图中字符，不区分大小写。" maxlength="4" autocomplete="off" value="" name="fourcode">
+            <img class="ui-checkcode-imgcode-img" align="absMiddle" alt="请输入您看到的内容" src="https://omeo.alipay.com/service/checkcode?sessionID=82012ab6b1f4ed9e675fb9092a25cb3b&r=0.9321065918075809" title="点击刷新图片校验码">
+            <a href="#">看不清，换一张</a>
+            <div class="ui-form-explain">请输入右图中字符，不区分大小写。</div>
+        </div>
+
+        <div class="ui-form-item">
+            <input id="test" value="" type="checkbox"> <label for="test">我已阅读并接受自主缴费服务协议</label>
+        </div>
+
+        <div class="ui-form-item">
+            <input type="submit" class="ui-button ui-button-morange" value="确定">
+            <input type="button" class="ui-button ui-button-mwhite" value="取消">
+        </div>   
+    </fieldset>
+</form>
+			</div>
+		</div>			
+	</div>
+	<!--form  end-->
+	
+	<!--list start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="list">list</h2>
+		    <p class="module-description">简单的链接列表，以及中间对齐的列表。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认列表</h3>
+			<div class="module-dom">
+			    <ul class="ui-list">
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">如何提现？</a></li>
+    <li class="ui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+</ul>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">灰色方块</h3>
+			<div class="module-dom">
+			    <ul class="ui-list ui-list-gray">
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">如何提现？</a></li>
+    <li class="ui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+</ul>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">灰色文字</h3>
+			<div class="module-dom">
+			    <ul class="ui-list ui-list-graylink">
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+</ul>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">没有方块</h3>
+			<div class="module-dom">
+			    <ul class="ui-list ui-list-nosquare">
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+    <li class="ui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+    <li class="ui-list-item"><a href="#">如何申请认证？</a></li>
+</ul>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">中间对齐的列表</h3>
+			<div class="module-dom">
+			    <dl class="ui-dlist">
+    <dt class="ui-dlist-tit">姓名：</dt>
+    <dd class="ui-dlist-det">吴鹏飞</dd>
+    <dt class="ui-dlist-tit">实名认证：</dt>
+    <dd class="ui-dlist-det">已认证 <a title="查看" href="#">查看</a></dd>
+    <dt class="ui-dlist-tit">手机号码：</dt>
+    <dd class="ui-dlist-det">18588182213 <a title="修改号码" href="#">修改号码</a></dd>
+    <dt class="ui-dlist-tit">Email邮箱：</dt>
+    <dd class="ui-dlist-det">mail.easy@hotmail.com</dd>
+    <dt class="ui-dlist-tit">淘宝绑定账户：</dt>
+    <dd class="ui-dlist-det">皮蛋狂吃瘦肉粥 <a title="查看" href="#">管理</a></dd>
+    <dt class="ui-dlist-tit">注册时间：</dt>
+    <dd class="ui-dlist-det">2011-10-18</dd>
+</dl>
+			</div>
+		</div>			
+	</div>
+	<!--list end-->
+	
+	<!--nav start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="nav">nav</h2>
+		    <p class="module-description">主导航样式，支持两级菜单。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    <div class="ui-nav">
+  <ul class="ui-nav-main">
+    <li class="ui-nav-item">
+      <a href="#">一级导航 1</a>
+      <ul class="ui-nav-submain">
+        <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 1-1</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 1-2</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 1-3</a></li>
+      </ul>
+    </li>
+    <li class="ui-nav-item ui-nav-item-current">
+      <a href="#">一级导航 2</a>
+      <ul class="ui-nav-submain">
+        <li class="ui-nav-subitem"><a href="#">二级导航 2-1</a></li>
+        <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 2-2</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 2-3</a></li>
+      </ul>
+    </li>
+    <li class="ui-nav-item">
+      <a href="#">一级导航 3</a>
+      <ul class="ui-nav-submain">
+        <li class="ui-nav-subitem"><a href="#">二级导航 3-1</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 3-2</a></li>
+        <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 3-3</a></li>
+      </ul>
+    </li>
+    <li class="ui-nav-item"><a href="#">一级导航 4</a></li>
+  </ul>
+</div>
+<div class="ui-nav-subcontainer"></div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">不显示二级导航</h3>
+			<div class="module-dom">
+			    <div class="ui-nav ui-nav-nosub">
+  <ul class="ui-nav-main">
+    <li class="ui-nav-item">
+      <a href="#">一级导航 1</a>
+      <ul class="ui-nav-submain">
+        <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 1-1</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 1-2</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 1-3</a></li>
+      </ul>
+    </li>
+    <li class="ui-nav-item ui-nav-item-current">
+      <a href="#">一级导航 2</a>
+      <ul class="ui-nav-submain">
+        <li class="ui-nav-subitem"><a href="#">二级导航 2-1</a></li>
+        <li class="ui-nav-subitem ui-nav-subitem-current"><a href="#">二级导航 2-2</a></li>
+        <li class="ui-nav-subitem"><a href="#">二级导航 2-3</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+			</div>
+			<div class="ui-nav-subcontainer"></div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">无二级导航</h3>
+			<div class="module-dom">
+			    <div class="ui-nav ui-nav-nosub">
+  <ul class="ui-nav-main">
+    <li class="ui-nav-item">
+      <a href="#">一级导航 1</a>
+    </li>
+    <li class="ui-nav-item ui-nav-item-current">
+      <a href="#">一级导航 2</a>
+    </li>
+  </ul>
+</div>
+			</div>
+			<div class="ui-nav-subcontainer"></div>
+		</div>					
+	</div>
+	<!--nav end-->
+	
+	<!--paging  start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="paging ">paging </h2>
+		    <p class="module-description">通用的分页组件，带有上下页和到达按钮。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">完整示例</h3>
+			<div class="module-dom">
+			    <div class="ui-paging">
+    <a href="#" class="ui-paging-prev">
+        <i class="iconfont" title="左三角形">Ü</i> 上一页
+    </a>
+    <a href="#" class="ui-paging-item">1</a>
+    <a href="#" class="ui-paging-item ui-paging-current">2</a>
+    <a href="#" class="ui-paging-item">3</a>
+    <a href="#" class="ui-paging-item">4</a>
+    <a href="#" class="ui-paging-item">5</a>
+    <a href="#" class="ui-paging-item">6</a>
+    <a href="#" class="ui-paging-item">7</a>
+    <span class="ui-paging-ellipsis">...</span>
+    <a href="#" class="ui-paging-item">24</a>
+    <a href="#" class="ui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">Ö</i>
+    </a>
+    <span class="ui-paging-info"><span class="ui-paging-bold">5/7</span>页</span>
+    <span class="ui-paging-which"><input name="some_name" value="6" type="text"></span>
+    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">上下页（首页）</h3>
+			<div class="module-dom">
+			    <div class="ui-paging">
+    <span class="ui-paging-info">第<span class="ui-paging-bold">1/7</span>页</span>
+    <span class="ui-paging-prev">
+        <i class="iconfont" title="左三角形">Ü</i> 上一页
+    </span>
+    <a href="#" class="ui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">Ö</i>
+    </a>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">上下页（中间）</h3>
+			<div class="module-dom">
+			    <div class="ui-paging">
+    <span class="ui-paging-info">第<span class="ui-paging-bold">5/7</span>页</span>
+    <a href="#" class="ui-paging-prev">
+        <i class="iconfont" title="左三角形">Ü</i> 上一页
+    </a>
+    <a href="#" class="ui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">Ö</i>
+    </a>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">上下页（末页）</h3>
+			<div class="module-dom">
+			    <div class="ui-paging">
+    <span class="ui-paging-info">第<span class="ui-paging-bold">7/7</span>页</span>
+    <a href="#" class="ui-paging-prev">
+        <i class="iconfont" title="左三角形">Ü</i> 上一页
+    </a>
+    <span class="ui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">Ö</i>
+    </span>
+</div>
+			</div>
+		</div>			
+	</div>
+	<!--paging  end-->
+	
+	<!--poptip start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="poptip">poptip</h2>
+		    <p class="module-description">气泡提示组件，带透明边框。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标准提示框</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+        <div class="ui-poptip-container">
+            <div class="ui-poptip-arrow ui-poptip-arrow-10">
+                <em>◆</em>
+                <span>◆</span>
+            </div>
+            <a href="javascript:;" class="ui-poptip-close">×</a>
+            <div class="ui-poptip-content">
+                我是内容我是内容我是内容我是内容我是内容我是内容
+            </div>
+        </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">内容复杂些</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+        <div class="ui-poptip-container">
+            <div class="ui-poptip-arrow ui-poptip-arrow-10">
+                <em>◆</em>
+                <span>◆</span>
+            </div>
+            <a href="javascript:;" class="ui-poptip-close">×</a>
+            <div class="ui-poptip-content">
+                <div>我是内容。</div>
+                <div>我是内容我是内容我是内容。</div>
+                <div>
+                    <a href="https://app.alipay.com/xxxx" target="_blank">现在使用</a>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">没有关闭按钮</h3>
+			<div class="module-dom">
+			   <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">    
+        <div class="ui-poptip-arrow ui-poptip-arrow-10">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">两点钟位置箭头</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-2">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">11点钟位置</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-11">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>	
+		<div class="module-demo">
+		    <h3 class="module-subtitle">1点钟位置</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-1">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>		
+		<div class="module-demo">
+		    <h3 class="module-subtitle">5点钟位置</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">7点钟位置</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-7">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">蓝色提示框</h3>
+			<div class="module-dom">
+			    <div class="ui-poptip ui-poptip-blue">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-10">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+			</div>
+		</div>
+	</div>
+	<!--poptip end-->
+	
+	<!--tab start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tab">tab</h2>
+		    <p class="module-description">标签切换组件。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认</h3>
+			<div class="module-dom">
+			    <div class="ui-tab">
+    <ul class="ui-tab-items">
+        <li class="ui-tab-item ui-tab-item-current">
+            <a href="javascript:;">全部交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">进行中的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">等待发货的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">未确认收获的交易</a>
+        </li>
+    </ul>
+</div>
+			</div>
+		</div>					
+	</div>
+	<!--tab end-->
+	
+	<!--table start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="table">table</h2>
+		    <p class="module-description">通用表格组件，可带表头表尾，用于显示各类数据。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">正常表格</h3>
+			<div class="module-dom">
+			    <div class="ui-table-container">
+    <table class="ui-table"><!-- 可以在class中加入ui-table-inbox或ui-table-noborder分别适应不同的情况 -->
+        <thead>
+            <tr>
+                <th>创建时间</th>
+                <th>名称<em class="ft-bar">|</em>交易号</th>
+                <th>对方</th>
+                <th>金额<em class="ft-bar">|</em>明细</th>
+                <th>状态</th>
+                <th>操作</th>
+                <th>备注</th>
+            </tr>
+        </thead><!-- 表头可选 -->
+        <tbody>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action ui-table-selected">Data</td>
+                <td>Data</td>
+            </tr>
+            <tr class="ui-table-split">
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+            <tr class="ui-table-split">
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">表尾数据</td>
+            </tr>
+        </tfoot><!-- 表尾可选 -->
+    </table>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">无边框的表格</h3>
+			<div class="module-dom">
+			    <table class="ui-table ui-table-noborder">
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>吴实</td>
+            <td>
+                <p>电话：13000111222</p>
+                <p>地址：浙江省杭州市西湖区晚唐路567号</p>
+            </td>
+            <td>操作</td>
+        </tr>
+        <tr class="ui-table-split">
+            <td>2</td>
+            <td>吴实</td>
+            <td>
+                <p>电话：13000111222</p>
+                <p>地址：浙江省杭州市西湖区晚唐路567号</p>
+            </td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>吴实</td>
+            <td>
+                <p>电话：13000111222</p>
+                <p>地址：浙江省杭州市西湖区晚唐路567号</p>
+            </td>
+            <td>操作</td>
+        </tr>
+        <tr class="ui-table-split">
+            <td>4</td>
+            <td>吴实</td>
+            <td>
+                <p>电话：13000111222</p>
+                <p>地址：浙江省杭州市西湖区晚唐路567号</p>
+            </td>
+            <td>操作</td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">可以嵌在别的框里的表格</h3>
+			<div class="module-dom">
+			    <div class="ui-table-container">
+    <table class="ui-table ui-table-inbox"><!-- 可以在class中加入ui-table-inbox或ui-table-noborder分别适应不同的情况 -->
+        <thead>
+            <tr>
+                <th>创建时间</th>
+                <th>名称<em class="ft-bar">|</em>交易号</th>
+                <th>对方</th>
+                <th>金额<em class="ft-bar">|</em>明细</th>
+                <th>状态</th>
+                <th>操作</th>
+                <th>备注</th>
+            </tr>
+        </thead><!-- 表头可选 -->
+        <tbody>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+            <tr class="ui-table-split">
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td class="ui-table-action">Data</td>
+                <td>Data</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+			</div>
+		</div>			
+	</div>
+	<!--table end-->
+	
+	<!--tipbox  start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tipbox ">tipbox </h2>
+		    <p class="module-description">支付宝通用信息提示框样式，共有提示、成功、警告、等待等七种提示框。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">信息</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-message">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="提示">í</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">提示标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">出错</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-error">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="出错">k</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">错误标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">警告</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-warning">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="警告">ì</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">警告标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">成功</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-success">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="成功">ï</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">成功标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">阻止</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-stop">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="阻止">î</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">阻止标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>			
+		<div class="module-demo">
+		    <h3 class="module-subtitle">等待</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-wait">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="等待">ó</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">等待标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">疑问</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-question">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="疑问">ñ</i>
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">疑问标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">空白的提示框，可以嵌入到 xbox 里，与上面的样式配合使用</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-white ui-tipbox-message">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="提示">í</i>    
+    </div>
+    <div class="ui-tipbox-content">
+        <h3 class="ui-tipbox-title">提示标题</h3>
+        <p class="ui-tipbox-explain">完成的说明完成的说明。</p>
+        <p class="ui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a></p>
+    </div>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">简单的提示框</h3>
+			<div class="module-dom">
+			    <div class="ui-tipbox ui-tipbox-message">
+    <div class="ui-tipbox-icon">
+        <i class="iconfont" title="提示">í</i>    
+    </div>
+    <div class="ui-tipbox-content-simple">
+        <h3 class="ui-tipbox-title">一句话就说明白的事</h3>
+    </div>
+</div>
+			</div>
+		</div>
+	</div>
+	<!--tipbox  end-->
+	
+	<!--tiptext start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tiptext">tiptext</h2>
+		    <p class="module-description">带各类图标的提示文案，可带有提示箭头。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">ui-tiptext 文本</h3>
+			<div class="module-dom">
+			    <p class="ui-tiptext ui-tiptext-message">
+    <i class="ui-tiptext-icon iconfont" title="提示">í</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-error">
+    <i class="ui-tiptext-icon iconfont" title="出错">k</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-warning">
+    <i class="ui-tiptext-icon iconfont" title="警告">ì</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-success">
+    <i class="ui-tiptext-icon iconfont" title="成功">ï</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-question">
+    <i class="ui-tiptext-icon iconfont" title="疑问">ñ</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-stop">
+    <i class="ui-tiptext-icon iconfont" title="阻止">î</i>
+    此服务支付宝不收取任何费用。
+</p>
+
+<p class="ui-tiptext ui-tiptext-wait">
+    <i class="ui-tiptext-icon iconfont" title="等待">ó</i>
+    此服务支付宝不收取任何费用。
+</p>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">ui-tip-container 区块</h3>
+			<div class="module-dom">
+			   <div class="ui-tiptext-container ui-tiptext-container-message">
+    <p class="ui-tiptext ui-tiptext-message">
+        <i class="ui-tiptext-icon iconfont" title="提示">í</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-error">
+    <p class="ui-tiptext ui-tiptext-error">
+        <i class="ui-tiptext-icon iconfont" title="提示">k</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-warning">
+    <p class="ui-tiptext ui-tiptext-warning">
+        <i class="ui-tiptext-icon iconfont" title="提示">ì</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-success">
+    <p class="ui-tiptext ui-tiptext-success">
+        <i class="ui-tiptext-icon iconfont" title="提示">ï</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-question">
+    <p class="ui-tiptext ui-tiptext-question">
+        <i class="ui-tiptext-icon iconfont" title="提示">ñ</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-stop">
+    <p class="ui-tiptext ui-tiptext-stop">
+        <i class="ui-tiptext-icon iconfont" title="提示">î</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+<br>
+<div class="ui-tiptext-container ui-tiptext-container-wait">
+    <p class="ui-tiptext ui-tiptext-wait">
+        <i class="ui-tiptext-icon iconfont" title="提示">ó</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">带上箭头</h3>
+			<div class="module-dom">
+			    <div class="ui-tiptext-container ui-tiptext-container-message">
+    <div class="ui-tiptext-arrow ui-tiptext-arrowup">
+        <em>◆</em>
+        <span>◆</span>
+    </div>
+    <p class="ui-tiptext ui-tiptext-message">
+        <i class="ui-tiptext-icon iconfont" title="提示">í</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">带下箭头</h3>
+			<div class="module-dom">
+			   <div class="ui-tiptext-container ui-tiptext-container-message">
+    <div class="ui-tiptext-arrow ui-tiptext-arrowdown">
+        <em>◆</em>
+        <span>◆</span>
+    </div>
+    <p class="ui-tiptext ui-tiptext-message">
+        <i class="ui-tiptext-icon iconfont" title="提示">í</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">带左箭头</h3>
+			<div class="module-dom">
+			    <div class="ui-tiptext-container ui-tiptext-container-message">
+    <div class="ui-tiptext-arrow ui-tiptext-arrowleft">
+        <em>◆</em>
+        <span>◆</span>
+    </div>
+    <p class="ui-tiptext ui-tiptext-message">
+        <i class="ui-tiptext-icon iconfont" title="提示">í</i>
+        此服务支付宝不收取任何费用。
+    </p>
+</div>
+			</div>
+		</div>			
+	</div>
+	<!--tiptext end-->
+	
+	<!--select  start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="select ">select </h2>
+		    <p class="module-description">下拉框和自动补全的样式</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">下拉框</h3>
+			<div class="module-dom">
+			    <div class="ui-select" style="width: 100px">
+  <a href="#" class="ui-select-trigger">
+    默认选项
+    <i class="iconfont" title="下三角形">É</i>
+  </a>
+  <ul class="ui-select-content">
+    <li class="ui-select-item"><a href="#">选项 1</a></li>
+    <li class="ui-select-item"><a href="#">选项 2</a></li>
+    <li class="ui-select-item"><a href="#">选项 3</a></li>
+  </ul>
+</div>
+			</div>
+		</div>			
+	</div>
+	<!--select  end-->
+	
+	<!--step start-->
+	<div class="module">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="step">step</h2>
+		    <p class="module-description">通用步骤条，有标准和迷你两套样式。支持二到五步。</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标准步骤条</h3>
+			<div class="module-dom">
+			   <ol class="ui-step ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">r</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+    </li>
+</ol>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">四步</h3>
+			<div class="module-dom">
+			   <ol class="ui-step ui-step-4">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">r</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+    </li>
+</ol>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">五步</h3>
+			<div class="module-dom">
+			   <ol class="ui-step ui-step-5">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-line">-</div>        
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">4</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">r</i>
+            <span class="ui-step-text">第五步</span>
+        </div>
+    </li>
+</ol>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">二步</h3>
+			<div class="module-dom">
+			    <ol class="ui-step ui-step-2">
+    <li class="ui-step-start ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">r</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+    </li>
+</ol>
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">蓝色步骤条</h3>
+			<div class="module-dom">
+			    <ol class="ui-step ui-step-blue ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">        
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-line">-</div>    
+        <div class="ui-step-icon">
+            <i class="iconfont">y</i>
+            <i class="iconfont ui-step-number">r</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+    </li>
+</ol>
+			</div>
+		</div>			
+		<div class="module-demo">
+		    <h3 class="module-subtitle">迷你步骤条</h3>
+			<div class="module-dom">
+			    <ol class="ui-ministep">
+    <li class="ui-ministep-item">
+        <i class="iconfont">y</i>
+        <i class="ui-ministep-number">1</i>        
+        <span class="ui-ministep-text">第一步</span>
+    </li>
+    <li class="ui-ministep-item ui-ministep-active">
+        <i class="iconfont">y</i>
+        <i class="ui-ministep-number">2</i>
+        <span class="ui-ministep-text">第二步</span>
+    </li>
+    <li class="ui-ministep-item">
+        <i class="iconfont">y</i>
+        <i class="ui-ministep-number">3</i>
+        <span class="ui-ministep-text">第三步</span>
+    </li>
+</ol>
+			</div>
+		</div>
+	</div>
+	<!--step end-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,7 +1,5 @@
 $(function(){
-$(".scrollable").scrollable({
-							circular: true //循环滚动
-							}).click(function() {$(this).data("scrollable").next();//鼠标点击切换
+$(".scrollable").scrollable().navigator();
  
 $(".items img").click(function() {
 	// see if same thumb is being clicked

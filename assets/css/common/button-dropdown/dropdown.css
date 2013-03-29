@@ -20,18 +20,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
+	z-index:99;
 }
 .ui-button-dropdown-large {
     top: 35px;
-    font-size: 14px;    
+    font-size: 14px;
+	width:106px;    
 }
 .ui-button-dropdown-middle {
     top: 31px;
-    font-size: 14px;    
+    font-size: 14px;
+	width:98px;
 }
 .ui-button-dropdown-small {
     top: 25px;
     font-size: 12px;
+	width:84px;
 }
 .ui-button-dropdown-item {
     zoom: 1;

@@ -17,7 +17,7 @@ $.tools.tabs.addEffect("slide", function(i, done) {
     });
 });
 	  $("#accordion").tabs(
-    "#accordion div.pane",
+    "#accordiona div.pane",
     {tabs: 'h2', effect: 'slide', initialIndex: null}
   );
   }
