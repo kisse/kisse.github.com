@@ -101,9 +101,10 @@
 						    <li><a href="#10">属性声明顺序</a></li>
 							<li><a href="#11">块缩进</a></li>
 							<li><a href="#12">分号</a></li>
-					<!--		<li><a href="#17">媒体元素</a></li>
-							<li><a href="#18">列表元素</a></li>
-							<li><a href="#19">表单元素</a></li>-->
+							<li><a href="#13">空格</a></li>
+							<li><a href="#14">空行</a></li>
+							<li><a href="#15">引号</a></li>
+							<li><a href="#16">注释</a></li>
 						</ul>
 					</li>					
 				</ul>			
@@ -260,52 +261,116 @@ text-indent: 2em;</code></pre>
   }</code></pre>
 		    </div>
 		</div>		
-	</div>
-	
-<!--	<div class="module" id="12">
+	</div>	
+	<div class="module" id="12">
 	    <div class="module-head">
 		    <h3 class="module-head-subtitle">分号</h3>
 			<p class="module-description">使用分号结束单个属性的定义；例如</p>
-		</div>		
-	</div>
-	<div class="module" id="17">
-	    <div class="module-head">
-		    <h2 class="module-head-title">媒体元素</h2>
-			<ul>
-			    <li><p class="module-description">img 请勿将img元素作为定位布局的工具, 不要用他显示空白图片; 给img元素增加alt属性;例如</p></li>
-				<li><p class="module-description">•	object 可以用来插入Flash;</p></li>
-			</ul>
 			<div class="highlight">
-		    <pre><code><span class="no"><</span><span class="no">!-- 不推</span>
-<<span class="title">img</span><span class="attribute"> src</span>=<span class="value">"spreadsheet.png"</span>>
-<span class="no"><</span><span class="no">!-- 推荐></span>
-<<span class="title">img</span><span class="attribute"> src</span>=<span class="value">"spreadsheet.png"</span><span class="attribute"> alt</span>=<span class="value">"Spreadsheet screenshot."</span>>
-</code></pre>
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="attribute">.test</span> {
+  display: block;
+  height: 100px
+}
+<span class="no">/* 推荐 */</span>
+<span class="attribute">.test</span> {
+  display: block;
+  height: 100px;
+}</code></pre>
 		    </div>
 		</div>		
 	</div>
-	<div class="module" id="18">
+	<div class="module" id="13">
 	    <div class="module-head">
-		    <h2 class="module-head-title">列表元素</h2>
-			<ul>
-			    <li><p class="module-description">dl 表示关联列表, dd是对dt的解释; dt和dd的对应关系比较随意： 一个dt对应多个dd、多个dt对应一个dd、多个dt对应多个dd, 都合法; 可用于名词/单词解释、日程列表、站点目录;</p></li>
-				<li><p class="module-description">ul 表示无序列表;</p></li>
-				<li><p class="module-description">ol 表示有序列表, 可用于排行榜等;</p></li>
-				<li><p class="module-description">li 表示列表项, 必须是ul/ol的子元素;</p></li>
-			</ul>
+		    <h3 class="module-head-subtitle">空格</h3>
+			<p class="module-description">在属性名冒号后加一个空格，例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="attribute">.test</span> {
+  display:block;
+}
+<span class="no">/* 推荐 */</span>
+<span class="attribute">.test {</span>
+  display: block;
+}</code></pre>
+		    </div>
 		</div>		
 	</div>
-	<div class="module" id="19">
+	<div class="module" id="14">
 	    <div class="module-head">
-		    <h2 class="module-head-title">表单元素</h2>
-			<ul>
-			    <li><p class="module-description">推荐使用 button 代替 input, 但必须声明 type;</p></li>
-				<li><p class="module-description">推荐使用 fieldset, legend 组织表单</p></li>
-				<li><p class="module-description">表单元素的 name 不能设定为 action, enctype, method, novalidate, target, submit 会导致表单提交混乱</p></li>
-			</ul>
+		    <h3 class="module-head-subtitle">空行</h3>
+			<p class="module-description">多个选择以及声明间以行分隔；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="value">a:focus</span>, <span class="value">a:active</span> {
+  position: relative; top: 1px;
+}
+<span class="no">/* 推荐 */</span>
+<span class="value">h1</span>,
+<span class="value">h2</span>,
+<span class="value">h3</span> {
+  font-weight: normal;
+  line-height: 1.2;
+}</code></pre>
+		    </div>
+			<p class="module-description">多个 css 规则间以空行分隔；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="value">html</span> {
+  background: #fff;
+}
+
+<span class="value">body</span> {
+  margin: auto;
+  width: 50%;
+}</code></pre>
+		    </div>
 		</div>		
 	</div>
-	-->
+	<div class="module" id="15">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">引号</h3>
+			<p class="module-description">尽可能的不用引号，迫不得已时使用单引号.</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="value">@import</span> url("//www.google.com/css/maia.css");
+
+<span class="value">html</span> {
+  font-family: "open sans", arial, sans-serif;
+}
+<span class="no">/* 推荐 */</span>
+<span class="value">@import</span> url(//www.google.com/css/maia.css);
+
+<span class="value">html</span> {
+  font-family: 'open sans', arial, sans-serif;
+}</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="16">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">注释</h3>
+			<p class="module-description">成组的 css 规则间用块状注释和空行分离;例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* Header */</span>
+
+<span class="title">#login-header</span> {}
+
+<span class="title">#login-header-below</span> {}
+
+<span class="no">/* Footer */</span>
+
+<span class="title">#login-footer</span> {}
+
+<span class="title">#login-footer-below</span> {}
+
+<span class="no">/* Gallery */</span>
+
+<span class="attribute">.login-gallery</span> {}
+
+<span class="attribute">.login-gallery-other</span> {}</code></pre>
+		    </div>
+		</div>		
+	</div>
 	
   
 
