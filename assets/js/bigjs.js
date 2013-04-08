@@ -1,7 +1,7 @@
 // JavaScript Document
  $(function(){
 			
-	$(".slidetabs").tabs(".banner > .b", {
+	$(".slidetabs1").tabs(".banner > .b", {
  event:'mouseover',
     // enable "cross-fading" effect
     effect: 'fade',

@@ -287,14 +287,14 @@ right:90px;
 background-image:url(../../images/jiantou2.png);
 }
 
-.slidetabs{
+.slidetabs1{
 position:absolute;
 top:350px;
 right:100px;
 z-index:10000;
 display:block;
 }
-.banner .slidetabs a{
+.banner .slidetabs1 a{
 display:block;
 float:left;
 width: 14px;
@@ -308,7 +308,7 @@ overflow: hidden;
 cursor: pointer;
 }
 
-.banner .slidetabs a.current{
+.banner .slidetabs1 a.current{
 background:#CCCCCC;
 }
 
@@ -350,7 +350,7 @@ cursor: default;
 text-decoration:none;
 }
 
-.iconfont{
+.icon{
 
 font-style: normal;
 font-weight: normal;
@@ -373,7 +373,7 @@ cursor:pointer;
 }
 
 
-.listbox a .iconfont {
+.listbox a .icon {
 color: #aaa;
 position: absolute;
 right: 12px;
