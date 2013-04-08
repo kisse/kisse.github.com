@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="assets/css/pages/bigcss.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/common/box/box.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button/button.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/button-dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/form.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/input.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/label.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/list/list.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/nav/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/paging/paging.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/poptip/poptip.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/table/table.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tipbox/tipbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tiptext/tiptext.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/select/select.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/step.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+	<script language="javascript" src="assets/js/jquery-1.7.1.js"></script>
+<script language="javascript" src="assets/js/jquery.tools.min.js"></script>
+<script language="javascript" src="assets/js/bigjs.js"></script>
+</head>
+<body class="all">
+<div class="head ding">
+		<div class="headtext">
+			<div class="logo">
+				<a class="home" href="big.html"></a>
+			</div>
+			<div class="ui-nav1 ui-nav-nosub1 text-right">
+  				<ul class="ui-nav-main1">
+				<li class="ui-nav-item1">
+     			<a href="index.html">首页</a>
+    		</li>
+			<li class="ui-nav-item1 ui-nav-item-current1">
+     			<a href="code-standards.html">编码规范</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+     			<a href="general-style.html">基础样式</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+      			<a href="#">通用组件</a>
+    		</li>
+			<li class="ui-nav-item1">
+      			<a href="#">版本变更</a>
+    		</li>
+	
+  		</ul>
+			</div>
+		</div>
+		<div class="vision">
+		v1.0
+		</div>
+	</div>
+	<div class="head2">	
+		<div class="container">
+			<h1>CSS编码规范</h1>
+			<p>开发样式时需要遵守的一些规则</p>
+		</div>
+	</div>	
+	<div id="content">
+		<div class="ui-grid-row">
+    	<div class="ui-grid-7">
+			<div class="listbox">
+				<ul>
+					<li>
+						<a href="#1">
+						代码规范
+						</a>
+						<ul class="list-sub">
+						    <li><a href="#1">一般性命名</a></li>
+							<li><a href="#2">id 和类的命名</a></li>
+							<li><a href="#3">元素选择器</a></li>
+							<li><a href="#4">简写属性名字</a></li>
+							<li><a href="#5">0 和单位</a></li>
+							<li><a href="#6">0前缀情况</a></li>
+							<li><a href="#7">16 进制的颜色值表示</a></li>
+							<li><a href="#8">前缀</a></li>
+							<li><a href="#9">hacks</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#10">
+						格式规范
+						</a>
+						<ul class="list-sub">
+						    <li><a href="#10">属性声明顺序</a></li>
+							<li><a href="#11">块缩进</a></li>
+							<li><a href="#12">分号</a></li>
+					<!--		<li><a href="#17">媒体元素</a></li>
+							<li><a href="#18">列表元素</a></li>
+							<li><a href="#19">表单元素</a></li>-->
+						</ul>
+					</li>					
+				</ul>			
+			</div>		
+		</div>		
+    	<div class="ui-grid-18">
+	<div class="module" id="1">
+	    <div class="module-head">
+		    <h2 class="module-head-title">代码规范</h2>
+			<h3 class="module-head-subtitle">一般性命名</h3>
+			<p class="module-description">使用小写字母，复合词以 - 分隔; 例如 nav.css , login-nav.css , login-page</p>
+		</div>			
+	</div>
+	<div class="module" id="2">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">id 和类的命名</h3>		    
+			<p class="module-description">为 id 和样式类使用有意义或通用的名字，避免由于 css 命名更改引起的不必要的文档或模板改变；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐： 无意义 */</span>
+<span class="title">#yee-1901</span> {}
+<span class="no">/* 不推荐： 表现层的命名 */</span>
+<span class="attribute">.button-green</span> {}
+<span class="no">/* 推荐: 具体 */</span>
+<span class="title">#gallery</span> {}
+<span class="title">#login</span> {}
+<span class="attribute">.video</span> {}
+<span class="no">/* 推荐: 通用 */</span>
+<span class="attribute">.effect</span> {}
+<span class="attribute">.alt</span> {}</code></pre>
+		    </div>
+			<p class="module-description">id 和 class 的命名长度应该适中，不要太简略也不要太详细；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="no">#navigation</span> {}
+<span class="attribute">.atr</span> {}
+<span class="no">/* 推荐 */</span>
+<span class="title">#nav</span> {}
+<span class="attribute">.author</span> {}</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="3">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">元素选择器</h3>		
+			<p class="module-description">为了性能原因 ， 请避免元素选择器和类选择器以及 id 选择器混用;例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+<span class="value">ul</span><span class="title">#example</span> {}
+<span class="value">div</span><span class="attribute">.error</span> {}
+<span class="no">/* 推荐 */</span>
+<span class="title">#example</span> {}
+<span class="attribute">.error</span> {}</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="4">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">简写属性名字</h3>		    
+			<p class="module-description">为了提高可读性，尽可能的使用简写属性。例如</p>
+			<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%;
+line-height: 1.6;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+<span class="no">/* 推荐 */</span>
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="5">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">0 和单位</h3>
+			<p class="module-description">对属性值为 0 的情况省略单位；例如</p>
+			<div class="highlight">
+		    <pre><code>margin: 0;
+padding: 0;</code></pre>
+		    </div>
+		</div>		
+	</div>	
+    <div class="module" id="6">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">0前缀情况</h3>
+			<p class="module-description">省略属性值中的 0 前缀;例如</p>
+			<div class="highlight">
+		    <pre><code>font-size: .8em;</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="7">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">16 进制的颜色值表示</h3>
+			<p class="module-description">尽可能使用 3 个字符的 16 进制颜色值；例如</p>
+		</div>	
+		<div class="highlight">
+		    <pre><code><span class="no">/* 不推荐 */</span>
+color: #eebbcc;
+<span class="no">/* 推荐 */</span>
+color: #ebc;</code></pre>
+		</div>	
+	</div>
+	<div class="module" id="8">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">前缀</h3>
+			<p class="module-description">为了防止冲突，对于应用特定的样式附加应用前缀；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="attribute">.login-help</span> {} <span class="no">/* login page */</span>
+<span class="title">#detail-note</span> {} <span class="no">/* detail page */</span></code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="9">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">hacks</h3>
+			<p class="module-description">避免 css hack ， 考虑使用特定浏览器前缀表示；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="attribute">.ks-ie6</span><span class="value"> p</span> {
+    margin: 1em 0;
+}</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="10">
+	    <div class="module-head">
+		    <h2 class="module-head-title">格式规范</h2>
+			<h3 class="module-head-subtitle">属性声明顺序</h3>
+			<p class="module-description">按照字母顺序声明属性，排序时忽略私有的浏览器前缀，对于特定的浏览器，私有的浏览器前缀应该参与排序;例如</p>
+			<div class="highlight">
+		    <pre><code>background: fuchsia;
+border: 1px solid;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: black;
+text-align: center;
+text-indent: 2em;</code></pre>
+		    </div>
+		</div>			
+	</div>
+	<div class="module" id="11">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">块缩进</h3>
+			<p class="module-description">块的内容应该被缩进；例如</p>
+			<div class="highlight">
+		    <pre><code><span class="value">html</span> {
+    background: #fff;
+    color: #444;
+  }</code></pre>
+		    </div>
+		</div>		
+	</div>
+	
+<!--	<div class="module" id="12">
+	    <div class="module-head">
+		    <h3 class="module-head-subtitle">分号</h3>
+			<p class="module-description">使用分号结束单个属性的定义；例如</p>
+		</div>		
+	</div>
+	<div class="module" id="17">
+	    <div class="module-head">
+		    <h2 class="module-head-title">媒体元素</h2>
+			<ul>
+			    <li><p class="module-description">img 请勿将img元素作为定位布局的工具, 不要用他显示空白图片; 给img元素增加alt属性;例如</p></li>
+				<li><p class="module-description">•	object 可以用来插入Flash;</p></li>
+			</ul>
+			<div class="highlight">
+		    <pre><code><span class="no"><</span><span class="no">!-- 不推</span>
+<<span class="title">img</span><span class="attribute"> src</span>=<span class="value">"spreadsheet.png"</span>>
+<span class="no"><</span><span class="no">!-- 推荐></span>
+<<span class="title">img</span><span class="attribute"> src</span>=<span class="value">"spreadsheet.png"</span><span class="attribute"> alt</span>=<span class="value">"Spreadsheet screenshot."</span>>
+</code></pre>
+		    </div>
+		</div>		
+	</div>
+	<div class="module" id="18">
+	    <div class="module-head">
+		    <h2 class="module-head-title">列表元素</h2>
+			<ul>
+			    <li><p class="module-description">dl 表示关联列表, dd是对dt的解释; dt和dd的对应关系比较随意： 一个dt对应多个dd、多个dt对应一个dd、多个dt对应多个dd, 都合法; 可用于名词/单词解释、日程列表、站点目录;</p></li>
+				<li><p class="module-description">ul 表示无序列表;</p></li>
+				<li><p class="module-description">ol 表示有序列表, 可用于排行榜等;</p></li>
+				<li><p class="module-description">li 表示列表项, 必须是ul/ol的子元素;</p></li>
+			</ul>
+		</div>		
+	</div>
+	<div class="module" id="19">
+	    <div class="module-head">
+		    <h2 class="module-head-title">表单元素</h2>
+			<ul>
+			    <li><p class="module-description">推荐使用 button 代替 input, 但必须声明 type;</p></li>
+				<li><p class="module-description">推荐使用 fieldset, legend 组织表单</p></li>
+				<li><p class="module-description">表单元素的 name 不能设定为 action, enctype, method, novalidate, target, submit 会导致表单提交混乱</p></li>
+			</ul>
+		</div>		
+	</div>
+	-->
+	
+  
+
+
+	
+</div>
+		
+		
+		
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+
+
+
+
+
+
+<div class="foot">
+		<div class="foottext">
+		<p>Designed and built with all the love in the world by BBC
+		<a href="http://eatmall.com" target="_blank">@BBC</a>
+		.
+		</p>
+		<p>Code licensed under
+		<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>
+		, documentation under 
+		<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		.
+		</p>
+		<p>
+		<a href="http://glyphicons.com" target="_blank">Glyphicons Free</a>
+		 licensed under 
+		 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		 .
+		</p>
+		<ul>
+			<li>
+			<a href="./about.html" target="_blank">各种帅锅</a>
+			</li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">各种妹纸</a></li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">以及孩他娘</a></li>
+		</ul>
+		</div>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

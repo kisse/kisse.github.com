@@ -9,7 +9,7 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="{{ site.author.name }}" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
+<link href="assets/css/pages/bigcss.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/common/box/box.css" rel="stylesheet" type="text/css">
     <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
     <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
@@ -31,32 +31,184 @@
     <link href="assets/css/common/select/select.css" rel="stylesheet" type="text/css">
     <link href="assets/css/common/step/step.css" rel="stylesheet" type="text/css">
     <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+	<script language="javascript" src="assets/js/jquery-1.7.1.js"></script>
+<script language="javascript" src="assets/js/jquery.tools.min.js"></script>
+<script language="javascript" src="assets/js/bigjs.js"></script>
 </head>
-<body>
-<div>
+<body class="all">
+<div class="head ding">
+		<div class="headtext">
+			<div class="logo">
+				<a class="home" href="big.html"></a>
+			</div>
+			<div class="ui-nav1 ui-nav-nosub1 text-right">
+  				<ul class="ui-nav-main1">
+				<li class="ui-nav-item1">
+     			<a href="index.html">首页</a>
+    		</li>
+			<li class="ui-nav-item1">
+     			<a href="code-standards.html">编码规范</a>
+    		</li>
+	 		<li class="ui-nav-item1 ui-nav-item-current1">
+     			<a href="general-style.html">基础样式</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+      			<a href="#">通用组件</a>
+    		</li>
+			<li class="ui-nav-item1">
+      			<a href="#">版本变更</a>
+    		</li>
+	
+  		</ul>
+			</div>
+		</div>
+		<div class="vision">
+		v1.0
+		</div>
+	</div>
+	<div class="head2">	
+		<div class="container">
+			<h1>基础样式</h1>
+			<p>对HTML基本元素进行样式定义，并利用可扩展的class增强其展示效果。</p>
+		</div>
+	</div>
+	
+	
+	<div id="content">
+		<div class="ui-grid-row">
+    	<div class="ui-grid-7">
+			<div class="listbox">
+				<ul>
+					<li>
+						<a href="#reset">
+						reset
+						<i class="iconfont">重设样式</i>
+						</a>
+					</li>
+					<li>
+						<a href="#grid">
+						grid
+						<i class="iconfont">栅格系统</i>
+						</a>
+					</li>
+					<li>
+						<a href="#box">
+						box
+						<i class="iconfont">盒状</i>
+						</a>
+					</li>
+					<li>
+						<a href="#button">
+						button
+						<i class="iconfont">按钮</i>
+						</a>
+					</li>
+					<li>
+						<a href="#button-dropdown">
+						button-dropdown
+						<i class="iconfont">按钮下拉菜单</i>
+						</a>
+					</li>
+					<li>
+						<a href="#form">
+						form
+						<i class="iconfont">表单</i>
+						</a>
+					</li>
+					<li>
+						<a href="#list">
+						list
+						<i class="iconfont">列表</i>
+						</a>
+					</li>
+					<li>
+						<a href="#nav">
+						nav
+						<i class="iconfont">导航</i>
+						</a>
+					</li>
+					<li>
+						<a href="#paging">
+						paging
+						<i class="iconfont">分页</i>
+						</a>
+					</li>
+					<li>
+						<a href="#poptip">
+						poptip
+						<i class="iconfont">提示</i>
+						</a>
+					</li>
+					<li>
+						<a href="#tab">
+						tab
+						<i class="iconfont">标签</i>
+						</a>
+					</li>
+					<li>
+						<a href="#table">
+						table
+						<i class="iconfont">表格</i>
+						</a>
+					</li>
+					<li>
+						<a href="#tipbox">
+						tipbox
+						<i class="iconfont">警告</i>
+						</a>
+					</li>
+					<li>
+						<a href="#tiptext">
+						tiptext
+						<i class="iconfont">提示文本</i>
+						</a>
+					</li>
+					<li>
+						<a href="#select">
+						select
+						<i class="iconfont">下拉框</i>
+						</a>
+					</li>
+					<li>
+						<a href="#step">
+						step
+						<i class="iconfont">步骤条</i>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		
+		</div>
+		
+    	<div class="ui-grid-18">
+		<div>
 
 	<!--reset start-->
-	<div class="module">
+
+	<div class="module" id="reset">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="reset">reset</h2>
+		    <h2 class="module-head-title">reset</h2>
 		    <p class="module-description">reset.css 是重设样式。</p>
 		</div>			
 	</div>
 	<!--reset end-->
 	
 		<!--grid start-->
-	<div class="module">
+
+	<div class="module" id="grid">
 	    <div class="module-head">
 		    <h2 class="module-head-title" id="grid">grid</h2>
 		    <p class="module-description">990像素定宽25栅格布局。使用说明:.ui-grid-row 表示一行，用于包裹.ui-grid-{{number}}。一行内的栅格数不要超过 25。 .ui-grid-{{number}} 表示区域跨越了多少列。数字从 1 到 25，例如ui-grid-18。</p>
+			<img src="assets/images/2KLao4hPu8.png">
 		</div>		
 	</div>
 	<!--grid end-->
 
 <!--box start-->
-    <div class="module">
+    <div class="module" id="box">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="box">box</h2>
+		    <h2 class="module-head-title">box</h2>
 		    <p class="module-description">带边框和标题的标准区块。</p>
 		</div>
 		<div class="module-demo">
@@ -143,9 +295,9 @@
 	<!--box end-->
 	
 	<!--button start-->
-	<div class="module">
+	<div class="module" id="button">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="button">button</h2>
+		    <h2 class="module-head-title">button</h2>
 		    <p class="module-description">全站通用按钮组件，无图片纯 css 实现，IE8 以下无圆角。</p>
 		</div>
 		<div class="module-demo">
@@ -200,9 +352,9 @@
 	<!--button end-->
 	
 	<!--button-dropdown start-->
-	<div class="module">
+	<div class="module" id="button-dropdown">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="button-dropdown">button-dropdown</h2>
+		    <h2 class="module-head-title">button-dropdown</h2>
 		    <p class="module-description">按钮下拉菜单样式。圆角。</p>
 		</div>
 		<div class="module-demo">
@@ -256,9 +408,9 @@
 	<!--button-dropdown end-->
 	
 	<!--form start-->
-	<div class="module">
+	<div class="module" id="form">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="form">form </h2>
+		    <h2 class="module-head-title">form </h2>
 		    <p class="module-description">通用表单样式。</p>
 		</div>
 		<div class="module-demo">
@@ -357,9 +509,9 @@
 	<!--form  end-->
 	
 	<!--list start-->
-	<div class="module">
+	<div class="module" id="list">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="list">list</h2>
+		    <h2 class="module-head-title">list</h2>
 		    <p class="module-description">简单的链接列表，以及中间对齐的列表。</p>
 		</div>
 		<div class="module-demo">
@@ -429,9 +581,9 @@
 	<!--list end-->
 	
 	<!--nav start-->
-	<div class="module">
+	<div class="module" id="nav">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="nav">nav</h2>
+		    <h2 class="module-head-title">nav</h2>
 		    <p class="module-description">主导航样式，支持两级菜单。</p>
 		</div>
 		<div class="module-demo">
@@ -515,9 +667,9 @@
 	<!--nav end-->
 	
 	<!--paging  start-->
-	<div class="module">
+	<div class="module" id="paging">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="paging ">paging </h2>
+		    <h2 class="module-head-title">paging </h2>
 		    <p class="module-description">通用的分页组件，带有上下页和到达按钮。</p>
 		</div>
 		<div class="module-demo">
@@ -591,9 +743,9 @@
 	<!--paging  end-->
 	
 	<!--poptip start-->
-	<div class="module">
+	<div class="module" id="poptip">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="poptip">poptip</h2>
+		    <h2 class="module-head-title">poptip</h2>
 		    <p class="module-description">气泡提示组件，带透明边框。</p>
 		</div>
 		<div class="module-demo">
@@ -766,9 +918,9 @@
 	<!--poptip end-->
 	
 	<!--tab start-->
-	<div class="module">
+	<div class="module" id="tab">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="tab">tab</h2>
+		    <h2 class="module-head-title">tab</h2>
 		    <p class="module-description">标签切换组件。</p>
 		</div>
 		<div class="module-demo">
@@ -796,9 +948,9 @@
 	<!--tab end-->
 	
 	<!--table start-->
-	<div class="module">
+	<div class="module" id="table">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="table">table</h2>
+		    <h2 class="module-head-title">table</h2>
 		    <p class="module-description">通用表格组件，可带表头表尾，用于显示各类数据。</p>
 		</div>
 		<div class="module-demo">
@@ -962,9 +1114,9 @@
 	<!--table end-->
 	
 	<!--tipbox  start-->
-	<div class="module">
+	<div class="module" id="tipbox">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="tipbox ">tipbox </h2>
+		    <h2 class="module-head-title">tipbox </h2>
 		    <p class="module-description">支付宝通用信息提示框样式，共有提示、成功、警告、等待等七种提示框。</p>
 		</div>
 		<div class="module-demo">
@@ -1104,9 +1256,9 @@
 	<!--tipbox  end-->
 	
 	<!--tiptext start-->
-	<div class="module">
+	<div class="module" id="tiptext">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="tiptext">tiptext</h2>
+		    <h2 class="module-head-title">tiptext</h2>
 		    <p class="module-description">带各类图标的提示文案，可带有提示箭头。</p>
 		</div>
 		<div class="module-demo">
@@ -1250,9 +1402,9 @@
 	<!--tiptext end-->
 	
 	<!--select  start-->
-	<div class="module">
+	<div class="module" id="select">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="select ">select </h2>
+		    <h2 class="module-head-title">select </h2>
 		    <p class="module-description">下拉框和自动补全的样式</p>
 		</div>
 		<div class="module-demo">
@@ -1275,9 +1427,9 @@
 	<!--select  end-->
 	
 	<!--step start-->
-	<div class="module">
+	<div class="module" id="step">
 	    <div class="module-head">
-		    <h2 class="module-head-title" id="step">step</h2>
+		    <h2 class="module-head-title">step</h2>
 		    <p class="module-description">通用步骤条，有标准和迷你两套样式。支持二到五步。</p>
 		</div>
 		<div class="module-demo">
@@ -1490,12 +1642,56 @@
 	
 	
 </div>
+		
+		
+		
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</div>
+	
 
 
 
 
 
 
+<div class="foot">
+		<div class="foottext">
+		<p>Designed and built with all the love in the world by BBC
+		<a href="http://eatmall.com" target="_blank">@BBC</a>
+		.
+		</p>
+		<p>Code licensed under
+		<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>
+		, documentation under 
+		<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		.
+		</p>
+		<p>
+		<a href="http://glyphicons.com" target="_blank">Glyphicons Free</a>
+		 licensed under 
+		 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		 .
+		</p>
+		<ul>
+			<li>
+			<a href="./about.html" target="_blank">各种帅锅</a>
+			</li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">各种妹纸</a></li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">以及孩他娘</a></li>
+		</ul>
+		</div>
+	
+	
+	</div>
 
 
 

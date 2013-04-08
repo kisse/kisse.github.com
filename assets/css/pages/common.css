@@ -1,7 +1,8 @@
 /* 内容展示区域 */
 .module {
+    padding-top:70px;
     border-bottom: 1px solid #CCCCCC;
-	margin:20px 0 50px 0;
+	margin:0 0 50px 0;
 	font:12px/1.5 tahoma,arial,Hiragino Sans GB,"Microsoft Yahei",\5b8b\4f53;
 }
 
@@ -10,13 +11,50 @@
 }
 
 .module-head .module-head-title {
+    font-size:30px;
+}
+
+.module-head .module-head-subtitle {
     font-size:22px;
-	margin-top: 40px;
 }
 
 .module-head .module-description {
-    font-size: 14px;
-    margin: 10px 0 20px;
+    font-size: 15px;
+    margin: 20px 0 20px 20px;
+}
+
+.module-description a {
+font-size: 15px;
+color:#0066FF;
+}
+
+.module-head ol {
+    display: block;
+    list-style-type: decimal;
+	-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+
+.module-head ul {
+    display: block;
+    list-style-type:square;
+	-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+
+.module-head li {
+    display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.module-head li p {
+    font-size: 15px;
 }
 
 .module-demo {
@@ -32,10 +70,58 @@
 
 .module-dom {
     display:block;
-	position:relative;
 }
 
+.highlight {
+    padding-top: 1px;
+    position: relative;
+	padding-left:20px;
+}
 
+.highlight pre {
+    background-color: #F8F8F8;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 6px 0;
+	overflow: auto;
+	padding: 6px 10px;
+}
+
+.highlight pre code {
+    background-color: transparent;
+    color: #5D6A6A;
+    margin: auto;
+    padding: 0;
+}
+ /* 注释代码 */
+code .no {
+    color: #999999;
+    font-style: italic;
+}
+
+ /* js选择类代码 */
+code .ch {
+    color: #2aa198;
+}
+
+ /* js函数代码 */
+code .fu {
+    color: #859900;
+}
+
+code .title {
+    color:#268bd2;
+}
+
+code .attribute {
+    color:#b58900;
+}
+
+code .value {
+    color:#2aa198;
+}
 
 
 

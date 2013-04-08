@@ -1,5 +1,5 @@
 .ui-nav {      /* µ¼º½Ìõ */
-  position: relative;
+  position: relative
 }
 .ui-nav a {
   text-decoration: none;
@@ -105,7 +105,7 @@
   box-shadow: inset 0px 1px 0px #dadada;
   background: #e7e7e7;
 }
-.ui-nav-subcontainer {
+.ui-nav-subcontainer{
   height: 37px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;

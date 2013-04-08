@@ -21,3 +21,16 @@
 	cursor: pointer;
 	display: inline-block;
 }
+
+a.slidetabs_icon.current {
+    	background:#FFFFFF;
+		width:14px;
+	height: 14px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 4px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+}

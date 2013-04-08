@@ -75,9 +75,6 @@
 
 			</div>
 		</div>
-		<div class="highlight">
-		    <pre><code>$(<span class="ch">".scrollable1"</span>).scrollable({ <span class="no">//vertical: true    //纵向滚动 （无.items div {float:left;}） </span>});</code></pre>
-		</div>
 		<div class="module-demo">
 		    <h3 class="module-subtitle">商品展示图</h3>
 			<div class="module-dom">
@@ -124,22 +121,6 @@
 
 
 			</div>
-		</div>
-		<div class="highlight">
-		    <pre><code>$(<span class="ch">".scrollable"</span>).scrollable().navigator();
-$(<span class="ch">".items img"</span>).click(<span class="fu">function()</span> {
-    if ($(<span class="ch">this</span>).hasClass(<span class="ch">"active"</span>)) { return; }
-    var url = $(<span class="ch">this</span>).attr(<span class="ch">"src"</span>).replace("_t", "");
-	var wrap = $(<span class="ch">"#image_wrap"</span>).fadeTo("medium", 0.5);
-	var img = new Image();
-	img.onload = <span class="fu">function()</span> {
-		wrap.fadeTo("fast", 1);
-		wrap.find(<span class="ch">"img"</span>).attr(<span class="ch">"src"</span>, <span class="ch">url</span>);
-	};
-	img.src = url;
-	$(<span class="ch">".items img"</span>).removeClass(<span class="ch">"active"</span>);
-	$(<span class="ch">this</span>).addClass(<span class="ch">"active"</span>);
-}).filter(<span class="ch">":first"</span>).click();</code></pre>
 		</div>
 		<div class="module-demo">
 		    <h3 class="module-subtitle">注册步骤</h3>
@@ -245,31 +226,6 @@ $(<span class="ch">".items img"</span>).click(<span class="fu">function()</span>
 
 			</div>
 		</div>
-		<div class="highlight"><pre><code>var root = $(<span class="ch">"#wizard"</span>).scrollable();
-var api = root.scrollable(), drawer = $(<span class="ch">"#drawer"</span>);
-api.onBeforeSeek(<span class="fu">function</span>(event, i) {
-    if (api.getIndex() < i) {
-	    var page = root.find(<span class="ch">".page"</span>).eq(api.getIndex()),
-		inputs = page.find(<span class="ch">".required :input"</span>).removeClass(<span class="ch">"error"</span>),
-		empty = inputs.filter(function() {
-		    return $(<span class="ch">this</span>).val().replace(/\s*/g, '') == '';
-		}
-	);
-	if (empty.length) {
-	    drawer.slideDown(<span class="fu">function()</span>  {
-		    drawer.css(<span class="ch">"backgroundColor"</span>, <span class="ch">"#fff"</span>);
-			setTimeout(<span class="fu">function()</span> { 
-			    drawer.css(<span class="ch">"backgroundColor"</span>, <span class="ch">"#fff"</span>); }, 1000);
-		}
-	);
-	empty.addClass(<span class="ch">"error"</span>);
-	return false;
-	} else {
-	    drawer.slideUp();
-	}
-}
-$(".ui-ministep li").removeClass("ui-ministep-active").eq(i).addClass("ui-ministep-active");
-});</code></pre></div>
 		
 	
 	
@@ -294,7 +250,7 @@ $(".ui-ministep li").removeClass("ui-ministep-active").eq(i).addClass("ui-minist
 
 
 
-
+</div>
 
 
 

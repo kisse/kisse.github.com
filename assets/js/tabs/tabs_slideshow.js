@@ -7,7 +7,7 @@ $(".slidetabs").tabs(".slidshow > a", {
     rotate: true
  
     // use the slideshow plugin. It accepts its own configuration
-    }).slideshow();
+    }).slideshow({clickable:false});
 $(".slidetabs").data("slideshow").play();//×Ô¶¯²¥·Å
   });
   

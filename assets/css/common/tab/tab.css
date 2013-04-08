@@ -67,6 +67,10 @@ a.current:hover {
     position:relative;
 }
 
-.ui-tab-content{
+.ui-tab-content1{
+    position:relative;
+}
+
+.ui-tab-content1 .description {
     position:absolute;
 }

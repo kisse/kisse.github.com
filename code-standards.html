@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="assets/css/pages/bigcss.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/common/box/box.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button/button.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/button-dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/form.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/input.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/label.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/list/list.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/nav/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/paging/paging.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/poptip/poptip.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/table/table.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tipbox/tipbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tiptext/tiptext.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/select/select.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/step.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+	<script language="javascript" src="assets/js/jquery-1.7.1.js"></script>
+<script language="javascript" src="assets/js/jquery.tools.min.js"></script>
+<script language="javascript" src="assets/js/bigjs.js"></script>
+</head>
+<body class="all">
+<div class="head ding">
+		<div class="headtext">
+			<div class="logo">
+				<a class="home" href="big.html"></a>
+			</div>
+			<div class="ui-nav1 ui-nav-nosub1 text-right">
+  				<ul class="ui-nav-main1">
+				<li class="ui-nav-item1">
+     			<a href="index.html">首页</a>
+    		</li>
+			<li class="ui-nav-item1 ui-nav-item-current1">
+     			<a href="code-standards.html">编码规范</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+     			<a href="general-style.html">基础样式</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+      			<a href="#">通用组件</a>
+    		</li>
+			<li class="ui-nav-item1">
+      			<a href="#">版本变更</a>
+    		</li>
+	
+  		</ul>
+			</div>
+		</div>
+		<div class="vision">
+		v1.0
+		</div>
+	</div>
+	<div class="head2">	
+		<div class="container">
+			<h1>编码规范</h1>
+			<p>开发样式时需要遵守的一些规则</p>
+		</div>
+	</div>	
+	<div id="content">
+		<div class="ui-grid-row">
+    	<div class="ui-grid-7">
+			<div class="listbox">
+				<ul>
+					<li>
+						<a href="#first">
+						文件与目录命名约定
+						</a>
+					</li>
+					<li>
+						<a href="#second">
+						文件编码约定
+						</a>
+					</li>
+					<li>
+						<a href="#third">
+						id 和 class 命名约定
+						</a>
+					</li>
+					<li>
+						<a href="HTML-standards.html">
+						HTML编码规范
+						</a>
+					</li>
+					<li>
+						<a href="CSS-standards.html">
+						CSS编码规范
+						</a>
+					</li>					
+				</ul>
+			
+			</div>
+		
+		</div>
+		
+    	<div class="ui-grid-18">
+
+	<div class="module" id="first">
+	    <div class="module-head">
+		    <h2 class="module-head-title">文件与目录命名约定</h2>
+			<ol>
+			    <li><p>一律小写, 必须是英文单词或产品名称的拼音, 多个单词用连字符(-)连接. 只能出现英文字母、数字和连字符, 严禁出现中文.</p></li>
+				<li><p>出现版本号时, 需要用字母 v 做为前缀, 小版本号用点号(.)隔开, 比如 global-v8.js 或 detail-v2.2.js .</p></li>
+				<li><p>该命名规范适用于 html, css, js, swf, php, xml, png, gif, jpg, ico 等前端维护的所有文件类型和相关目录.</p></li>
+				<li><p>js 和 css 压缩文件, 统一以 -min 结尾, 比如源码文件为 seed.js, 压缩后为 seed-min.js .</p></li>
+			</ol>
+		</div>			
+	</div>
+
+
+	<div class="module" id="second">
+	    <div class="module-head">
+		    <h2 class="module-head-title">文件编码约定</h2>
+		    <p class="module-description">由于历史原因, 前端开发涉及的所有文本文件请统一 采用 GB2312, GBK 或 GB18030 编码 .</p>
+			<p class="module-description">注意：后台采用 UTF-8 的新项目, 或自主开发的项目, 推荐使用 UTF-8 编码.</p>
+		</div>		
+	</div>
+
+
+
+    <div class="module" id="third">
+	    <div class="module-head">
+		    <h2 class="module-head-title">id 和 class 命名约定</h2>
+		    <ol>
+			    <li><p>d 和 class 的命名总规则为： 内容优先,表现为辅. 首先根据内容来命名, 比如 main-nav. 如果根据内容找不到合适的命名, 可以再结合表现来定, 比如 skin-blue, present-tab, col-main.</p></li>
+				<li><p>id 和 class 名称一律小写, 多个单词用连字符连接, 比如 recommend-presents.</p></li>
+				<li><p>id 和 class 名称中只能出现小写的 26 个英文字母、数字和连字符(-), 任何其它字符都严禁出现.</p></li>
+				<li><p>id 和 class 尽量用英文单词命名 . 确实找不到合适的单词时, 可以考虑使用产品的中文拼音, 比如 wangwang, dating. 对于中国以及淘宝特色词汇, 也可以使用拼音, 比如 xiaobao, daigou. 除了产品名称和特色词汇, 其它任何情况下都严禁使用拼音.</p></li>
+				<li><p>在不影响语义的情况下, id 和 class 名称中可以适当采用英文单词缩写, 比如 col, nav, hd, bd, ft 等, 但切忌自造缩写.</p></li>
+				<li><p>id 和 class 名称中的第一个词必须是单词全拼或语义非常清晰的单词缩写, 比如 present, col.</p></li>
+				<li><p>仅在 JavaScript 代码中当作 hook 用的 id 或 class, 命名规则为 J_UpperCamelCase``(请注意, ``J_ 后的首字母也大写！), 其中字母 J 代表 JavaScript, 也是钩子(hook)的象形. 注意：如果在 JavaScript 和 CSS 中都需要用到, 则不用遵守本约定.</p></li>
+				<li><p>在自动化测试脚本中当作 hook 用的 class, 命名规则为 T_UpperCamelCase, 其中字母 T 代表 Test.</p></li>
+			</ol>
+		</div>			
+	</div>
+	<div class="module" id="second">
+	    <div class="module-head">
+		    <h2 class="module-head-title">更多编码规范</h2>
+		    <p class="module-description">更多编码规范请查看
+			<a href="HTML-standards.html">HTML编码规范</a>
+			<a href="CSS-standards.html">CSS编码规范</a></p>
+		</div>		
+	</div>
+	
+</div>
+		
+		
+		
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+
+
+
+
+
+
+<div class="foot">
+		<div class="foottext">
+		<p>Designed and built with all the love in the world by BBC
+		<a href="http://eatmall.com" target="_blank">@BBC</a>
+		.
+		</p>
+		<p>Code licensed under
+		<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>
+		, documentation under 
+		<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		.
+		</p>
+		<p>
+		<a href="http://glyphicons.com" target="_blank">Glyphicons Free</a>
+		 licensed under 
+		 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		 .
+		</p>
+		<ul>
+			<li>
+			<a href="./about.html" target="_blank">各种帅锅</a>
+			</li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">各种妹纸</a></li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">以及孩他娘</a></li>
+		</ul>
+		</div>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
