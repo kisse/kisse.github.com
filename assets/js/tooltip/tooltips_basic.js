@@ -12,6 +12,6 @@ $(function(){//Лђеп$("#demo :input")
  
           // tweak the position
           position: "top center",
-          offset: [-200, -480]
+          offset: [-90000, -100]
       });
 		   });

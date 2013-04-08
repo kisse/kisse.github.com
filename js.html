@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         zuosanshao
+    -->
+
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="assets/css/pages/bigcss.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/common/box/box.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button/button.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/button-dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/button-dropdown/dropdown.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/form.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/input.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/label.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/list/list.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/nav/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/paging/paging.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/poptip/poptip.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/table/table.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tipbox/tipbox.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tiptext/tiptext.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/select/select.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/step.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+	<script language="javascript" src="assets/js/jquery-1.7.1.js"></script>
+<script language="javascript" src="assets/js/jquery.tools.min.js"></script>
+<script language="javascript" src="assets/js/bigjs.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_minimal.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_fade.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_mouseover.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_folding.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_horizontal.js"></script>
+	<script language="javascript" src="assets/js/tabs/tabs_slideshow.js"></script>
+	<script language="javascript" src="assets/js/overlay/overlay_minimal.js"></script>
+	<script language="javascript" src="assets/js/overlay/overlay_dialog.js"></script>
+	<script language="javascript" src="assets/js/scrollable/scrollable_basic.js"></script>
+	<script language="javascript" src="assets/js/scrollable/scrollable_gallery.js"></script>
+	<script language="javascript" src="assets/js/scrollable/scrollable_step.js"></script>
+	<script language="javascript" src="assets/js/tooltip/tooltips_basic.js"></script>
+	<script language="javascript" src="assets/js/tooltip/tooltips_bouncy.js"></script>
+	
+    <link href="assets/css/base/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pages/common.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/tab/tab_folding.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/slideshow/slideshow.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/overlay/overlay.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/scrollable/scrollable.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/form.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/input.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/form/label.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/scrollable/scrollable_register.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/step/mini.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/base/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/poptip/poptip.css" rel="stylesheet" type="text/css">
+</head>
+<body class="all">
+<div class="head ding">
+		<div class="headtext">
+			<div class="logo">
+				<a class="home" href="big.html"></a>
+			</div>
+			<div class="ui-nav1 ui-nav-nosub1 text-right">
+  				<ul class="ui-nav-main1">
+				<li class="ui-nav-item1">
+     			<a href="index.html">首页</a>
+    		</li>
+			<li class="ui-nav-item1">
+     			<a href="code-standards.html">编码规范</a>
+    		</li>
+	 		<li class="ui-nav-item1">
+     			<a href="general-style.html">基础样式</a>
+    		</li>
+	 		<li class="ui-nav-item1 ui-nav-item-current1">
+      			<a href="js.html">通用组件</a>
+    		</li>
+			<li class="ui-nav-item1">
+      			<a href="#">版本变更</a>
+    		</li>
+	
+  		</ul>
+			</div>
+		</div>
+		<div class="vision">
+		v1.0
+		</div>
+	</div>
+	<div class="head2">	
+		<div class="container">
+			<h1>通用组件</h1>
+			<p>无数可复用的组件提供了导航、标签、滚动等更多功能。</p>
+		</div>
+	</div>
+	
+	
+	<div id="content">
+		<div class="ui-grid-row">
+    	<div class="ui-grid-7">
+			<div class="listbox">
+				<ul>
+					<li>
+						<a href="#tab">
+						tab
+						<i class="iconfont">标签切换</i>
+						</a>
+					</li>
+					<li>
+						<a href="#overlay">
+						overlay
+						<i class="iconfont">覆盖效果</i>
+						</a>
+					</li>
+					<li>
+						<a href="#scrollable">
+						scrollable
+						<i class="iconfont">滚动效果</i>
+						</a>
+					</li>
+					<li>
+						<a href="#tips">
+						tips
+						<i class="iconfont">提示条</i>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		
+		</div>
+		
+    	<div class="ui-grid-18">
+		<div>
+
+
+
+	<div class="module" id="tab">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tab">tab</h2>
+		    <p class="module-description">标签切换</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">"ul.ui-tab-items"</span>).tabs(<span class="ch">"div.ui-tab-content > div"</span>);</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">渐变效果</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items1">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content1">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">"ul.ui-tab-items1"</span>).tabs(<span class="ch">"div.ui-tab-content1 > div"</span>, {effect:<span class="ch"> 'fade'</span>, fadeOutSpeed: <span class="ch">400</span>});</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">鼠标覆盖标签切换</h3>
+			<div class="module-dom">
+			    <ul class="ui-tab-items2">
+<li class="ui-tab-item"><a class="current" href="#first">全部交易</a></li>
+<li class="ui-tab-item"><a href="#second">进行中的交易</a></li>
+<li class="ui-tab-item"><a href="#third">等待发货的交易</a></li>
+<li class="ui-tab-item"><a href="#fourth">未确认收获的交易</a></li>
+</ul>
+<div class="ui-tab-content2">
+<div class="description" id="first">First tab content <a href="#third" target="_self">to the third</a></div>
+<div class="description" id="second">Second tab content</div>
+<div class="description" id="third">Third tab content</div>
+<div class="description" id="fourth">Fourth tab content</div>
+</div>
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">"ul.ui-tab-items2"</span>).tabs(<span class="ch">"div.ui-tab-content2 > div"</span>, {event:<span class="ch"> 'mouseover'</span>});</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标签折叠效果</h3>
+			<div class="module-dom">
+			<div id="accordion">
+<h2 class="current">First pane</h2>
+<div class="pane" style="display:block">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...</div>
+<h2>Second pane</h2>
+<div class="pane">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...</div> 
+<h2>Third pane</h2>
+<div class="pane">
+... pane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane contentpane content ...</div>
+</div>
+			</div>
+		</div>		
+		<div class="highlight">
+		    <pre><code> $(<span class="ch">"#accordion"</span>).tabs(<span class="ch">"#accordion div.pane"</span>,{tabs: <span class="ch">'h2'</span>, effect: <span class="ch">'slide'</span>, initialIndex: <span class="ch">null</span>});</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle" style="clear:both">轮播效果</h3>
+			<div class="module-dom">
+<!--轮播图片-->
+<div class="slidshow">
+    <a href=""><img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg"></a>
+	<a href=""><img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg"></a>
+	<a href=""><img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg"></a>
+	<div class="slidetabs">
+	    <a class="slidetabs_icon" href="#"></a>
+        <a class="slidetabs_icon" href="#"></a>
+        <a class="slidetabs_icon" href="#"></a>    </div>
+</div>
+<!--手动上下翻页-->
+<!--<a class="backward">上一页</a>
+<a class="forward">下一页</a>-->
+<!--手动播放或停止-->
+<!--<button onClick='$(".slidetabs").data("slideshow").play();'>Play</button>
+<button onClick='$(".slidetabs").data("slideshow").stop();'>Stop</button>-->
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">".slidetabs"</span>).tabs(<span class="ch">".slidshow > a"</span>, 
+{event:<span class="ch">'mouseover'</span>,rotate: <span class="ch">true</span>}).slideshow({clickable:<span class="ch">false</span>});
+$(<span class="ch">".slidetabs"</span>).data(<span class="ch">"slideshow"</span>).play();</code></pre>
+		</div>
+		
+		<div class="module-demo">
+		    <h3 class="module-subtitle">标签横向折叠效果</h3>
+			<div class="module-dom">
+<div id="accordion1"> 
+    <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" style="float:left;" />
+    <div style="width:100px; display:block; float:left;"> .. pane content .. </div>
+ 
+    <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" style="float:left;" />
+    <div style="width:100px; display:block; float:left;"> .. pane content ..</div>
+ 
+    <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" style="float:left;" />
+    <div style="width:100px; display:block; float:left;"> .. pane content ..</div>
+  </div>
+			</div>
+		</div>
+		<div class="highlight" style="clear:both">
+		    <pre><code>$(<span class="ch">"#accordion1"</span>).tabs(<span class="ch">"#accordion1 div"</span>, {tabs: <span class="ch">'img'</span>: ,effect: <span class="ch">'horizontal'</span>});</code></pre>
+		</div>
+	</div>
+
+	<div class="module" id="overlay">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="overlay">overlay</h2>
+		    <p class="module-description">覆盖</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" rel="#mies1">
+<img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" rel="#mies2">
+<!-- first overlay. id attribute matches our selector -->
+<div class="simple_overlay" id="mies1">
+  <!-- large image -->
+  <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+ 
+  <!-- image details -->
+  <div class="details">
+    <h3>The Barcelona Pavilion</h3>
+    <h4>Barcelona, Spain</h4>
+    <p>The content ...</p>
+  </div>
+</div>
+ 
+<!-- second overlay -->
+<div class="simple_overlay" id="mies2">
+  <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+ <div class="details">
+    <h3>The Barcelona Pavilion</h3>
+    <h4>Barcelona, Spain</h4>
+    <p>The content ...</p>
+  </div>
+</div>
+
+
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">对话框覆盖</h3>
+			<div class="module-dom">
+			    
+<p>
+  <button class="modalInput" rel="#yesno">Yes or no?</button>
+  <button class="modalInput" rel="#prompt">User input</button>
+</p>
+ 
+<!-- yes/no dialog -->
+<div class="modal" id="yesno">
+  <h2>This is a modal dialog</h2>
+ 
+  <p>
+    You can only interact with elements that are inside this dialog.
+    To close it click a button or use the ESC key.
+  </p>
+ 
+  <!-- yes/no buttons -->
+  <p>
+    <button class="close"> Yes </button>
+    <button class="close"> No </button>
+  </p>
+</div>
+ 
+<!-- user input dialog -->
+<div class="modal" id="prompt">
+  <h2>This is a modal dialog</h2>
+ 
+  <p>
+    You can only interact with elements that are inside this dialog.
+    To close it click a button or use the ESC key.
+  </p>
+ 
+  <!-- input form. you can press enter too -->
+  <form>
+    <input />
+    <button type="submit"> OK </button>
+    <button type="button" class="close"> Cancel </button>
+  </form>
+  <br />
+ 
+</div>
+
+
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+    
+	<div class="module" id="scrollable">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="scrollable">scrollable</h2>
+		    <p class="module-description">滚动</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+			    
+<div class="ui_scrollable">
+<!-- "previous page" action -->
+<a class="prev ui_scrollable_left"></a> 
+<!-- root element for scrollable -->
+<div class="scrollable1" id="scrollable1"> 
+  <!-- root element for the items -->
+  <div class="items"> 
+    <!-- 1-4 -->
+    <div>
+      <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" />
+      <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" />
+      <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+      <img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg" />    </div> 
+    <!-- 5-8 -->
+    <div>
+      <img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg" />
+      <img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg" />
+      <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" />
+      <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" />    </div> 
+    <!-- 9-12 -->
+    <div>
+      <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+      <img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg" />
+      <img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg" />
+      <img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg" />    </div> 
+  </div> 
+</div> 
+<!-- "next page" action -->
+<a class="next ui_scrollable_right"></a>
+</div>
+
+
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">".scrollable1"</span>).scrollable(
+{ <span class="no">//vertical: true    //纵向滚动 （无.items div {float:left;}) </span>});</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">商品展示图</h3>
+			<div class="module-dom">
+			    
+<div>
+<div id="image_wrap">
+  <!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+  <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" />
+</div>
+<div class="ui_scrollable">
+<!-- "previous page" action -->
+<a class="prev ui_scrollable_left"></a> 
+<!-- root element for scrollable -->
+<div class="scrollable" id="scrollable"> 
+  <!-- root element for the items -->
+  <div class="items"> 
+    <!-- 1-4 -->
+    <div>
+      <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" />
+      <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" />
+      <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+      <img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg" />
+    </div> 
+    <!-- 5-8 -->
+    <div>
+      <img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg" />
+      <img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg" />
+      <img src="assets/images/test/1d902a62ac7fbeb84a8c7d8ed53a5d67_150x150.jpg" />
+      <img src="assets/images/test/2e5280f7766647033c4f69703f9f0c58_150x150.jpg" />
+    </div> 
+    <!-- 9-12 -->
+    <div>
+      <img src="assets/images/test/04e250d7e8d2d7af22de445d449c3ca9_150x150.jpg" />
+      <img src="assets/images/test/72ca5d034d5b784d7df0f810092430fb_150x150.jpg" />
+      <img src="assets/images/test/f86d31117943ee8b97d624405a233455_150x150.jpg" />
+      <img src="assets/images/test/ff79923d2f88b1fc09ca31316b9df8c8_150x150.jpg" />
+    </div> 
+  </div> 
+</div> 
+<!-- "next page" action -->
+<a class="next ui_scrollable_right"></a>
+</div>
+</div>
+
+
+			</div>
+		</div>
+		<div class="highlight">
+		    <pre><code>$(<span class="ch">".scrollable"</span>).scrollable().navigator();
+$(<span class="ch">".items img"</span>).click(<span class="fu">function()</span> {
+    if ($(<span class="ch">this</span>).hasClass(<span class="ch">"active"</span>)) { return; }
+    var url = $(<span class="ch">this</span>).attr(<span class="ch">"src"</span>).replace("_t", "");
+	var wrap = $(<span class="ch">"#image_wrap"</span>).fadeTo("medium", 0.5);
+	var img = new Image();
+	img.onload = <span class="fu">function()</span> {
+		wrap.fadeTo("fast", 1);
+		wrap.find(<span class="ch">"img"</span>).attr(<span class="ch">"src"</span>, <span class="ch">url</span>);
+	};
+	img.src = url;
+	$(<span class="ch">".items img"</span>).removeClass(<span class="ch">"active"</span>);
+	$(<span class="ch">this</span>).addClass(<span class="ch">"active"</span>);
+}).filter(<span class="ch">":first"</span>).click();</code></pre>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">注册步骤</h3>
+			<div class="module-dom">
+			    
+<form class="ui-form" name="" method="post" action="#" id="">
+<!-- scrollable root element -->
+    <div id="wizard">
+	    <ol class="ui-ministep">
+		    <li class="ui-ministep-item ui-ministep-active">
+			    <i class="iconfont">y</i>
+				<i class="ui-ministep-number">1</i>
+				<span class="ui-ministep-text">注册</span>
+			</li>
+			<li class="ui-ministep-item">
+			    <i class="iconfont">y</i>
+				<i class="ui-ministep-number">2</i>
+				<span class="ui-ministep-text"> 填写详细信息</span>
+			</li>
+			<li class="ui-ministep-item">
+			    <i class="iconfont">y</i>
+				<i class="ui-ministep-number">3</i>
+				<span class="ui-ministep-text">完成</span>
+			</li>
+		</ol>
+		<div id="drawer">带*内容不能为空</div>
+		<!-- scrollable items -->
+		<div class="items">
+			<!-- pages -->
+			<div class="page">
+				<h2>Step 1:填写注册信息</h2>
+				<div class="ui-form-item required">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+							注册邮箱：
+					</label>
+					<input class="ui-input" type="text">
+				</div>
+				<div class="ui-form-item required">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						用户名：
+					</label>
+					<input class="ui-input" type="text">
+				</div>
+				<div class="ui-form-item required">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						密码：
+					</label>
+					<input class="ui-input" type="password">
+				</div>
+				<div class="ui-form-item required">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						再次输入密码：
+					</label>
+					<input class="ui-input" type="password">
+				</div>
+				<div class="ui-form-item">
+					<button type="button" class="next ui-button ui-button-morange">下一步</button>
+				</div>
+			</div>
+			<div class="page">
+				<h2>Step 2:填写详细信息</h2>
+				<div class="ui-form-item">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						姓名：
+					</label>
+					<input class="ui-input" type="text">
+				</div>
+				<div class="ui-form-item">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						地址：
+					</label>
+					<input class="ui-input" type="text">
+				</div>
+				<div class="ui-form-item">
+					<label class="ui-label">
+						<span class="ui-form-required">*</span>
+						电话：
+					</label>
+					<input class="ui-input" type="text">
+				</div>
+				<div class="ui-form-item">
+					<input type="button" class="next ui-button ui-button-morange" value="下一步">
+					<input type="button" class="prev ui-button ui-button-mwhite" value="上一步">
+				</div>
+			</div>
+			<div class="page">
+				<h2>Step 3:完成注册</h2>
+				<p>已完成注册！</p>
+				<div class="ui-form-item">
+				    <input type="submit" class="prev ui-button ui-button-mwhite" value="完成">
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+			</div>
+		</div>
+		<div class="highlight"><pre><code>var root = $(<span class="ch">"#wizard"</span>).scrollable();
+var api = root.scrollable(), drawer = $(<span class="ch">"#drawer"</span>);
+api.onBeforeSeek(<span class="fu">function</span>(event, i) {
+    if (api.getIndex() < i) {
+	    var page = root.find(<span class="ch">".page"</span>).eq(api.getIndex()),
+		inputs = page.find(<span class="ch">".required :input"</span>).removeClass(<span class="ch">"error"</span>),
+		empty = inputs.filter(function() {
+		    return $(<span class="ch">this</span>).val().replace(/\s*/g, '') == '';
+		}
+	);
+	if (empty.length) {
+	    drawer.slideDown(<span class="fu">function()</span>  {
+		    drawer.css(<span class="ch">"backgroundColor"</span>, <span class="ch">"#fff"</span>);
+			setTimeout(<span class="fu">function()</span> { 
+			    drawer.css(<span class="ch">"backgroundColor"</span>, <span class="ch">"#fff"</span>); }, 1000);
+		}
+	);
+	empty.addClass(<span class="ch">"error"</span>);
+	return false;
+	} else {
+	    drawer.slideUp();
+	}
+}
+$(".ui-ministep li").removeClass("ui-ministep-active").eq(i).addClass("ui-ministep-active");
+});</code></pre></div>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+	
+	<!--<div class="module" id="tips">
+	    <div class="module-head">
+		    <h2 class="module-head-title" id="tooltip">tooltip</h2>
+		    <p class="module-description">提示条</p>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">默认用法</h3>
+			<div class="module-dom">
+
+<div id="demo" style="width:50px; border:1px solid #000000;">
+  鼠标移入
+</div>
+
+<div class="ui-poptip tooltip">
+     <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容        </div>
+    </div>
+    </div>
+</div>
+
+
+			</div>
+		</div>
+		<div class="module-demo">
+		    <h3 class="module-subtitle">跳跃效果</h3>
+			<div class="module-dom">
+			    
+
+<div id="demo1">
+  内容
+</div>
+
+<div class="ui-poptip  tooltip">
+     <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+
+
+			</div>
+		</div>	
+	
+	
+</div>-->
+
+	
+</div>
+		
+		
+		
+		</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+
+
+
+
+
+
+<div class="foot">
+		<div class="foottext">
+		<p>Designed and built with all the love in the world by BBC
+		<a href="http://eatmall.com" target="_blank">@BBC</a>
+		.
+		</p>
+		<p>Code licensed under
+		<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>
+		, documentation under 
+		<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		.
+		</p>
+		<p>
+		<a href="http://glyphicons.com" target="_blank">Glyphicons Free</a>
+		 licensed under 
+		 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+		 .
+		</p>
+		<ul>
+			<li>
+			<a href="./about.html" target="_blank">各种帅锅</a>
+			</li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">各种妹纸</a></li>
+			<li>.</li>
+			<li><a href="./about.html" target="_blank">以及孩他娘</a></li>
+		</ul>
+		</div>
+	
+	
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
